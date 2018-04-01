@@ -24,8 +24,8 @@ package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 ////////////////////////////////////////////////////////////////////////////////
 public class ReversiHistory
 {
-	ReversiPoint point;
-	public int color;
+	private ReversiPoint point;
+	private int color;
 
 	public ReversiPoint getPoint() {
 		return point;

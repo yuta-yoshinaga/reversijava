@@ -24,8 +24,8 @@ package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 ////////////////////////////////////////////////////////////////////////////////
 public class ReversiPoint
 {
-	public int x;
-	public int y;
+	private int x;
+	private int y;
 
 	public int getX() {
 		return x;
