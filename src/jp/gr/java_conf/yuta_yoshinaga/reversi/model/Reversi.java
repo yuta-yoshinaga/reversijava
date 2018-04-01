@@ -25,6 +25,7 @@ package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 public class Reversi
 {
 	private int mMasuSts[][];											//!< マスの状態
+	private int mMasuStsOld[][];										//!< 以前のマスの状態
 	private int mMasuStsEnaB[][];										//!< 黒の置ける場所
 	private int mMasuStsCntB[][];										//!< 黒の獲得コマ数
 	private int mMasuStsPassB[][];										//!< 黒が相手をパスさせる場所
@@ -50,6 +51,14 @@ public class Reversi
 
 	public void setmMasuSts(int[][] mMasuSts) {
 		this.mMasuSts = mMasuSts;
+	}
+
+	public int[][] getmMasuStsOld() {
+		return mMasuStsOld;
+	}
+
+	public void setmMasuStsOld(int[][] mMasuStsOld) {
+		this.mMasuStsOld = mMasuStsOld;
 	}
 
 	public int[][] getmMasuStsEnaB() {
@@ -211,6 +220,7 @@ public class Reversi
 		this.mMasuCnt		= masuCnt;
 		this.mMasuCntMax		= masuMax;
 		this.mMasuSts		= new int [this.mMasuCntMax][this.mMasuCntMax];
+		this.mMasuStsOld	= new int [this.mMasuCntMax][this.mMasuCntMax];
 		this.mMasuStsEnaB	= new int [this.mMasuCntMax][this.mMasuCntMax];
 		this.mMasuStsCntB	= new int [this.mMasuCntMax][this.mMasuCntMax];
 		this.mMasuStsPassB	= new int [this.mMasuCntMax][this.mMasuCntMax];
@@ -246,6 +256,9 @@ public class Reversi
 			this.mMasuHist[i] = new ReversiHistory();
 		}
 		this.mMasuHistCur = 0;
+		for (int i = 0; i < mMasuCntMax; i++){
+			System.arraycopy(this.mMasuSts[i], 0, this.mMasuStsOld[i], 0, this.mMasuSts[i].length);
+		}
 		this.reset();
 	}
 
@@ -288,6 +301,9 @@ public class Reversi
 		this.makeMasuSts(ReversiConst.REVERSI_STS_BLACK);
 		this.makeMasuSts(ReversiConst.REVERSI_STS_WHITE);
 		this.mMasuHistCur = 0;
+		for (int i = 0; i < mMasuCntMax; i++){
+			System.arraycopy(this.mMasuSts[i], 0, this.mMasuStsOld[i], 0, this.mMasuSts[i].length);
+		}
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -1013,6 +1029,23 @@ public class Reversi
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			以前のマスステータスを取得
+	///	@fn				int getMasuStsOld(int y, int x)
+	///	@param[in]		int y			取得するマスのY座標
+	///	@param[in]		int x			取得するマスのX座標
+	///	@return			-1 : 失敗 それ以外 : マスステータス
+	///	@author			Yuta Yoshinaga
+	///	@date			2017.10.20
+	///
+	////////////////////////////////////////////////////////////////////////////////
+	public int getMasuStsOld(int y, int x)
+	{
+		int ret = -1;
+		if (this.checkPara(y, 0, this.mMasuCnt) == 0 && this.checkPara(x, 0, this.mMasuCnt) == 0) ret = this.mMasuStsOld[y][x];
+		return ret;
+	}
+
+	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			指定座標に指定色を置けるかチェック
 	///	@fn				public int getMasuStsEna(int color,int y,int x)
 	///	@param[in]		int color		コマ色
@@ -1109,6 +1142,9 @@ public class Reversi
 		int ret = -1;
 		if(this.getMasuStsEna(color,y,x) != 0){
 			ret = 0;
+			for (int i = 0; i < mMasuCntMax; i++){
+				System.arraycopy(this.mMasuSts[i], 0, this.mMasuStsOld[i], 0, this.mMasuSts[i].length);
+			}
 			this.mMasuSts[y][x] = color;
 			this.revMasuSts(color,y,x);
 			this.makeMasuSts(ReversiConst.REVERSI_STS_BLACK);
@@ -1139,6 +1175,9 @@ public class Reversi
 	{
 		int ret = -1;
 		ret = 0;
+		for (int i = 0; i < mMasuCntMax; i++){
+			System.arraycopy(this.mMasuSts[i], 0, this.mMasuStsOld[i], 0, this.mMasuSts[i].length);
+		}
 		this.mMasuSts[y][x] = color;
 		return ret;
 	}
