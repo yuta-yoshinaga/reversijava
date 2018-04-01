@@ -36,6 +36,19 @@ public class FrontController extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		String func = request.getParameter("func");
+		System.out.println(func);
+		if(func.equals("setSetting")) {
+			String para = request.getParameter("mMode");
+			System.out.println(para);
+		}else if(func.equals("reset")) {
+
+		}else if(func.equals("reversiPlay")) {
+			String y = request.getParameter("y");
+			String x = request.getParameter("x");
+			System.out.println(y);
+			System.out.println(x);
+		}
 		doGet(request, response);
 	}
 
