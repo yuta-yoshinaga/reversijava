@@ -90,6 +90,7 @@ public class FrontController extends HttpServlet
 			String para = request.getParameter("para");
 			ReversiSetting setting = JSON.decode(para, ReversiSetting.class);
 			System.out.println(para);
+			System.out.println(setting);
 		}else if(func.equals("reset")) {
 
 		}else if(func.equals("reversiPlay")) {
