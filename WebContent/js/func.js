@@ -25,12 +25,13 @@ $(document).ready(function() {
     }
 
     function setSetting(reversiSetting) {
+		var requestObj = $.stringify(reversiSetting);
         $.ajax({
             url: "/reversijava/FrontController",
             type: 'POST',
             data: {
                 func: "setSetting",
-                para: reversiSetting,
+                para: requestObj,
             },
             beforeSend: function(xhr) {
                 xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'));
