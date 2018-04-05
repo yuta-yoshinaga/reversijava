@@ -1,0 +1,14 @@
+<map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.AnalysisReversiWhite" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.AnalysisReversiWhite">
+<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a3c63579c27513dffc555416388f8530a" title="コマをひっくり返す " alt="" coords="296,5,531,61"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a9929ed36140ddc25923ede99f86564c3" title="各コマの置ける場所等のステータス作成 " alt="" coords="288,85,539,141"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#ac6fafa41eeff56abfc67b2b5876b50f9" title="指定色が現在置ける場所があるかチェック " alt="" coords="295,165,531,221"/>
+<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a055f20327e781b1f6807dba0baa1e51b" title="指定座標に指定色を置けるかチェック " alt="" coords="603,231,839,287"/>
+<area shape="rect" id="node7" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a3989b051544745724fc372d4a6b8a7f7" title="指定座標が角か取得 " alt="" coords="295,296,531,352"/>
+<area shape="rect" id="node8" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#aa3c701584a82e4656cb1c60123454953" title="指定座標が角の一つ手前か取得 " alt="" coords="295,376,531,432"/>
+<area shape="rect" id="node9" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a4874c6523adfdfd42dfbd625f5e3fe7a" title="角の隣に置いても角を取られないマス検索 " alt="" coords="272,457,555,498"/>
+<area shape="rect" id="node11" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afc0b642f56e39a28ab5adc48c8fd2b98" title="指定座標が角の二つ手前か取得 " alt="" coords="295,523,531,579"/>
+<area shape="rect" id="node12" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a296b35d2241e6b3cff31bcb199c3d9aa" title="指定座標が角の三つ以上手前か取得 " alt="" coords="295,603,531,659"/>
+<area shape="rect" id="node13" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a8ab289d67a725a30e92411c90b755bd8" title="ポイント座標数取得 " alt="" coords="295,683,531,739"/>
+<area shape="rect" id="node6" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afbad8b2c3b2423a7490f9a3b636584d3" title="パラメーター範囲チェック " alt="" coords="887,293,1167,334"/>
+<area shape="rect" id="node10" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#aaab64f3b70ed5da5f0707933cbf82802" title="マスステータスを取得 " alt="" coords="603,395,839,451"/>
+</map>

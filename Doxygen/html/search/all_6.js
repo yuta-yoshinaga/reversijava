@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['gameendanimexec',['gameEndAnimExec',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play.html#aaf0f07bdc219b6d8ec5551457fb551ab',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::ReversiPlay']]],
+  ['getbetcnt',['getBetCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a9f826e110ec3298a6bc5d6987a94519c',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getcolorena',['getColorEna',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#ac6fafa41eeff56abfc67b2b5876b50f9',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getedgesideone',['getEdgeSideOne',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#aa3c701584a82e4656cb1c60123454953',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getedgesidethree',['getEdgeSideThree',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a296b35d2241e6b3cff31bcb199c3d9aa',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getedgesidetwo',['getEdgeSideTwo',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afc0b642f56e39a28ab5adc48c8fd2b98',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getedgesidezero',['getEdgeSideZero',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a3989b051544745724fc372d4a6b8a7f7',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getgameendsts',['getGameEndSts',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#abc97a3ba932ee271cf04ff0f72162100',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['gethistory',['getHistory',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#af781f5ebb4fb33b574ec58acfb45a796',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['gethistorycnt',['getHistoryCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a286949e070d0cfc8a1d9562a298b7b98',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getmasusts',['getMasuSts',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#aaab64f3b70ed5da5f0707933cbf82802',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getmasustscnt',['getMasuStsCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a1a528710342faba65975f4768d24b129',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getmasustsena',['getMasuStsEna',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a055f20327e781b1f6807dba0baa1e51b',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getmasustsold',['getMasuStsOld',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a051aca9eb7ac3ce375a6c017fd0eb400',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getpoint',['getPoint',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#ab180757b310c3a72cf159043ba0dc09e',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getpointanz',['getPointAnz',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a6da3f67c0468cf59ba6ceb796133c921',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getpointcnt',['getPointCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a8ab289d67a725a30e92411c90b755bd8',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['goodpoint',['goodPoint',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_anz.html#a2be8d7d47c6f3984145e72bb67ad3fb4',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::ReversiAnz']]]
+];

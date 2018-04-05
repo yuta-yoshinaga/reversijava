@@ -1,0 +1,6 @@
+<map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.setMasuSts" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.setMasuSts">
+<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a055f20327e781b1f6807dba0baa1e51b" title="指定座標に指定色を置けるかチェック " alt="" coords="297,5,533,61"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a3c63579c27513dffc555416388f8530a" title="コマをひっくり返す " alt="" coords="297,85,532,141"/>
+<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a9929ed36140ddc25923ede99f86564c3" title="各コマの置ける場所等のステータス作成 " alt="" coords="289,165,540,221"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afbad8b2c3b2423a7490f9a3b636584d3" title="パラメーター範囲チェック " alt="" coords="588,13,868,54"/>
+</map>

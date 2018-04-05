@@ -1,0 +1,6 @@
+<map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.reset" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.reset">
+<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play.html#a040fddf6e59c00de4c9c2ecdaedcb574" title="リセット処理 " alt="" coords="311,5,525,61"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a22abbc9c1a2016388dafb08dc9a7b820" title="コンストラクタ " alt="" coords="309,85,527,141"/>
+<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a0e9bc15d570635cf024287fbf541b4b9" title="マスの数変更 " alt="" coords="300,165,536,221"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1controller_1_1_front_controller.html#a2f0d63da6e6fc17d2ecf2695af6f8d99" title="POST. " alt="" coords="584,5,775,61"/>
+</map>

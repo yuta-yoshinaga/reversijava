@@ -1,0 +1,11 @@
+<map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPlay.sendDrawInfoMsg" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPlay.sendDrawInfoMsg">
+<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play.html#a8c5c00aeb6656d7806416ac577b77e3b" title="メッセージ " alt="" coords="268,245,483,301"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#aaab64f3b70ed5da5f0707933cbf82802" title="マスステータスを取得 " alt="" coords="531,5,767,61"/>
+<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a055f20327e781b1f6807dba0baa1e51b" title="指定座標に指定色を置けるかチェック " alt="" coords="531,85,767,141"/>
+<area shape="rect" id="node6" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a1a528710342faba65975f4768d24b129" title="指定座標の獲得コマ数取得 " alt="" coords="531,165,767,221"/>
+<area shape="rect" id="node7" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play.html#a0218c589d8567d52f92ab87bc4bec30f" title="1マス描画 " alt="" coords="541,245,756,301"/>
+<area shape="rect" id="node8" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play.html#a0dec187d4c4372a3470fac8e341ae9e8" title="現在の色メッセージ " alt="" coords="541,325,756,381"/>
+<area shape="rect" id="node9" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a9f826e110ec3298a6bc5d6987a94519c" title="コマ数取得 " alt="" coords="531,405,767,461"/>
+<area shape="rect" id="node10" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play.html#a4c4d14ddaf65d3643bd7edc7b562f4d1" title="現在のステータスメッセージ " alt="" coords="541,485,756,541"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afbad8b2c3b2423a7490f9a3b636584d3" title="パラメーター範囲チェック " alt="" coords="815,133,1095,174"/>
+</map>
