@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
-///	@file			ResJson.java
-///	@brief			レスポンスJSONクラス実装ファイル
+///	@file			CallbacksJson.java
+///	@brief			コールバックJSONクラス実装ファイル
 ///	@author			Yuta Yoshinaga
 ///	@date			2018.04.01
 ///	$Version:		$
@@ -17,43 +17,35 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.util.ArrayList;
+
 ////////////////////////////////////////////////////////////////////////////////
-///	@class		ResJson
-///	@brief		レスポンスJSONクラス
+///	@class		CallbacksJson
+///	@brief		コールバックJSONクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ResJson
+public class CallbacksJson
 {
-	private String auth;
-	private CallbacksJson callbacks;
+	private ArrayList<FuncsJson> funcs;
 
-	public String getAuth() {
-		return auth;
+	public ArrayList<FuncsJson> getFuncs() {
+		return funcs;
 	}
 
-	public void setAuth(String auth) {
-		this.auth = auth;
-	}
-
-	public CallbacksJson getCallbacks() {
-		return callbacks;
-	}
-
-	public void setCallbacks(CallbacksJson callbacks) {
-		this.callbacks = callbacks;
+	public void setFuncs(ArrayList<FuncsJson> funcs) {
+		this.funcs = funcs;
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			コンストラクタ
-	///	@fn				public ResJson()
+	///	@fn				public CallbacksJson()
 	///	@return			ありません
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public ResJson(){
-		this.auth = "";
-		this.callbacks = new CallbacksJson();
+	public CallbacksJson(){
+		this.funcs = new ArrayList<FuncsJson>();
 	}
 }
 

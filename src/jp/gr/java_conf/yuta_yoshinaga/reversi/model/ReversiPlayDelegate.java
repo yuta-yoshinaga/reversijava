@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
-///	@file			ResJson.java
-///	@brief			レスポンスJSONクラス実装ファイル
+///	@file			ReversiPlayDelegate.java
+///	@brief			リバーシデリゲートファイル
 ///	@author			Yuta Yoshinaga
 ///	@date			2018.04.01
 ///	$Version:		$
@@ -18,42 +18,41 @@
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
 ////////////////////////////////////////////////////////////////////////////////
-///	@class		ResJson
-///	@brief		レスポンスJSONクラス
+///	@interface	ReversiPlayDelegate
+///	@brief		リバーシプレイデリゲート
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ResJson
+public class ReversiPlayDelegate
 {
-	private String auth;
-	private CallbacksJson callbacks;
+	private final ReversiPlayInterface impl;
 
-	public String getAuth() {
-		return auth;
+	public ReversiPlayDelegate(ReversiPlayInterface i)
+	{
+		this.impl = i;
 	}
 
-	public void setAuth(String auth) {
-		this.auth = auth;
+	public void ViewMsgDlg(String title , String msg)
+	{
+		impl.ViewMsgDlg(title , msg);
 	}
 
-	public CallbacksJson getCallbacks() {
-		return callbacks;
+	public void DrawSingle(int y, int x, int sts, int bk, String text)
+	{
+		impl.DrawSingle(y, x, sts, bk, text);
 	}
 
-	public void setCallbacks(CallbacksJson callbacks) {
-		this.callbacks = callbacks;
+	public void CurColMsg(String text)
+	{
+		impl.CurColMsg(text);
 	}
 
-	////////////////////////////////////////////////////////////////////////////////
-	///	@brief			コンストラクタ
-	///	@fn				public ResJson()
-	///	@return			ありません
-	///	@author			Yuta Yoshinaga
-	///	@date			2018.04.01
-	///
-	////////////////////////////////////////////////////////////////////////////////
-	public ResJson(){
-		this.auth = "";
-		this.callbacks = new CallbacksJson();
+	public void CurStsMsg(String text)
+	{
+		impl.CurStsMsg(text);
+	}
+
+	public void Wait(int time)
+	{
+		impl.Wait(time);
 	}
 }
-

@@ -20,60 +20,6 @@ package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 import java.util.Random;
 
 ////////////////////////////////////////////////////////////////////////////////
-///	@interface	ReversiPlayInterface
-///	@brief		リバーシプレイインターフェース
-///
-////////////////////////////////////////////////////////////////////////////////
-interface ReversiPlayInterface
-{
-	void ViewMsgDlg(String title , String msg);
-	void DrawSingle(int y, int x, int sts, int bk, String text);
-	void CurColMsg(String text);
-	void CurStsMsg(String text);
-	void Wait(int time);
-}
-
-////////////////////////////////////////////////////////////////////////////////
-///	@interface	ReversiPlayDelegate
-///	@brief		リバーシプレイデリゲート
-///
-////////////////////////////////////////////////////////////////////////////////
-class ReversiPlayDelegate
-{
-	private final ReversiPlayInterface impl;
-
-	public ReversiPlayDelegate(ReversiPlayInterface i)
-	{
-		this.impl = i;
-	}
-
-	public void ViewMsgDlg(String title , String msg)
-	{
-		impl.ViewMsgDlg(title , msg);
-	}
-
-	public void DrawSingle(int y, int x, int sts, int bk, String text)
-	{
-		impl.DrawSingle(y, x, sts, bk, text);
-	}
-
-	public void CurColMsg(String text)
-	{
-		impl.CurColMsg(text);
-	}
-
-	public void CurStsMsg(String text)
-	{
-		impl.CurStsMsg(text);
-	}
-
-	public void Wait(int time)
-	{
-		impl.Wait(time);
-	}
-}
-
-////////////////////////////////////////////////////////////////////////////////
 ///	@class		ReversiPlay
 ///	@brief		リバーシプレイクラス
 ///

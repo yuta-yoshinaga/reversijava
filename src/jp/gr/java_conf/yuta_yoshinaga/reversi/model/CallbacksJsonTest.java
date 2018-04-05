@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
-///	@file			ResJsonTest.java
-///	@brief			レスポンスJSONテストクラス実装ファイル
+///	@file			CallbacksJsonTest.java
+///	@brief			コールバックJSONテストクラス実装ファイル
 ///	@author			Yuta Yoshinaga
 ///	@date			2018.04.01
 ///	$Version:		$
@@ -18,52 +18,37 @@ package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.junit.jupiter.api.Test;
 
 ////////////////////////////////////////////////////////////////////////////////
-///	@class		ResJsonTest
-///	@brief		レスポンスJSONテストクラス
+///	@class		CallbacksJsonTest
+///	@brief		コールバックJSONテストクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-class ResJsonTest extends ResJson {
+class CallbacksJsonTest extends CallbacksJson {
 
 	@Test
-	void testGetAuth() {
-		String tgt = this.getAuth();
-		boolean flag = false;
-		if(tgt.isEmpty())	flag = true;
-		assertTrue(flag);
-	}
-
-	@Test
-	void testSetAuth() {
-		this.setAuth("test");
-		String tgt = this.getAuth();
-		boolean flag = false;
-		if(tgt.equals("test"))	flag = true;
-		assertTrue(flag);
-	}
-
-	@Test
-	void testGetCallbacks() {
-		CallbacksJson tgt = this.getCallbacks();
+	void testGetFuncs() {
+		ArrayList<FuncsJson> tgt = this.getFuncs();
 		boolean flag = false;
 		if(tgt != null)	flag = true;
 		assertTrue(flag);
 	}
 
 	@Test
-	void testSetCallbacks() {
-		this.setCallbacks(new CallbacksJson());
-		CallbacksJson tgt = this.getCallbacks();
+	void testSetFuncs() {
+		this.setFuncs(new ArrayList<FuncsJson>());
+		ArrayList<FuncsJson> tgt = this.getFuncs();
 		boolean flag = false;
 		if(tgt != null)	flag = true;
 		assertTrue(flag);
 	}
 
 	@Test
-	void testResJson() {
-		ResJson tgt = new ResJson();
+	void testCallbacksJson() {
+		CallbacksJson tgt = new CallbacksJson();
 		boolean flag = false;
 		if(tgt != null)	flag = true;
 		assertTrue(flag);
