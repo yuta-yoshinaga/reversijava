@@ -24,7 +24,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ResJson;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPlay;
 import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiSetting;
 import net.arnx.jsonic.JSON;
 
@@ -34,8 +37,7 @@ import net.arnx.jsonic.JSON;
 ///
 ////////////////////////////////////////////////////////////////////////////////
 @WebServlet("/FrontController")
-public class FrontController extends HttpServlet
-{
+public class FrontController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -47,8 +49,7 @@ public class FrontController extends HttpServlet
 	/// @see HttpServlet#HttpServlet()
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public FrontController()
-	{
+	public FrontController() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -64,8 +65,8 @@ public class FrontController extends HttpServlet
 	/// @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-	{
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
@@ -81,25 +82,54 @@ public class FrontController extends HttpServlet
 	/// @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-	{
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		// TODO Auto-generated method stub
+
+		HttpSession session = request.getSession(true);
+		ReversiPlay rvPlay = null;
+		if (session.isNew()) {
+			// *** 初めてのアクセス *** //
+			rvPlay = new ReversiPlay();
+			session.setAttribute("rvPlay", rvPlay);
+		} else {
+			rvPlay = (ReversiPlay) session.getAttribute("rvPlay");
+		}
+		if(rvPlay == null) {
+			rvPlay = new ReversiPlay();
+			session.setAttribute("rvPlay", rvPlay);
+		}
+
 		String func = request.getParameter("func");
 		System.out.println(func);
-		if(func.equals("setSetting")) {
+		ResJson resJson = new ResJson();
+		if (func.equals("setSetting")) {
 			String para = request.getParameter("para");
 			ReversiSetting setting = JSON.decode(para, ReversiSetting.class);
 			System.out.println(para);
-			System.out.println(setting);
-		}else if(func.equals("reset")) {
-
-		}else if(func.equals("reversiPlay")) {
+			rvPlay.setmSetting(setting);
+			rvPlay.reset();
+			session.setAttribute("rvPlay", rvPlay);
+			resJson.setAuth("[SUCCESS]");
+		} else if (func.equals("reset")) {
+			rvPlay.reset();
+			session.setAttribute("rvPlay", rvPlay);
+			resJson.setAuth("[SUCCESS]");
+		} else if (func.equals("reversiPlay")) {
 			String y = request.getParameter("y");
 			String x = request.getParameter("x");
 			System.out.println(y);
 			System.out.println(x);
+			rvPlay.reversiPlay(Integer.parseInt(y), Integer.parseInt(x));
+			session.setAttribute("rvPlay", rvPlay);
+			resJson.setAuth("[SUCCESS]");
 		}
-		doGet(request, response);
+		response.setContentType("application/json");
+		response.setCharacterEncoding("utf-8");
+
+		String json = JSON.encode(resJson);
+		System.out.println(json);
+		response.getWriter().append(json);
 	}
 
 }
