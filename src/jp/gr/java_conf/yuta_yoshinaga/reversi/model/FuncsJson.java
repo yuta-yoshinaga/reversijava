@@ -17,12 +17,14 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
+
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		FuncsJson
 ///	@brief		ファンクションJSONクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class FuncsJson
+public class FuncsJson implements Serializable
 {
 	private String func;
 	private String param1;

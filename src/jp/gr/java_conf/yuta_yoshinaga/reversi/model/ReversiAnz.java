@@ -17,12 +17,14 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
+
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		ReversiAnz
 ///	@brief		リバーシ解析クラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ReversiAnz
+public class ReversiAnz implements Serializable
 {
 	private int min;													//!< 最小値
 	private int max;													//!< 最大値

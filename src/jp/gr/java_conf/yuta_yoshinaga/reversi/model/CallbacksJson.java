@@ -17,6 +17,7 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -24,7 +25,7 @@ import java.util.ArrayList;
 ///	@brief		コールバックJSONクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class CallbacksJson
+public class CallbacksJson implements Serializable
 {
 	private ArrayList<FuncsJson> funcs;
 

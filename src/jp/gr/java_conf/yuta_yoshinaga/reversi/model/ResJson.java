@@ -17,12 +17,14 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
+
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		ResJson
 ///	@brief		レスポンスJSONクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ResJson
+public class ResJson implements Serializable
 {
 	private String auth;
 	private CallbacksJson callbacks;

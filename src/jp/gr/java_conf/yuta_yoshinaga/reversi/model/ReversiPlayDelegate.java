@@ -17,12 +17,14 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
+
 ////////////////////////////////////////////////////////////////////////////////
 ///	@interface	ReversiPlayDelegate
 ///	@brief		リバーシプレイデリゲート
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ReversiPlayDelegate
+public class ReversiPlayDelegate implements Serializable
 {
 	private final ReversiPlayInterface impl;
 

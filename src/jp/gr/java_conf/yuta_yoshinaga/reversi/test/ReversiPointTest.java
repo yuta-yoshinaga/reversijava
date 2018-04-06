@@ -1,6 +1,6 @@
 ////////////////////////////////////////////////////////////////////////////////
-///	@file			ResJsonTest.java
-///	@brief			レスポンスJSONテストクラス実装ファイル
+///	@file			ReversiPointTest.java
+///	@brief			リバーシポイントテストクラス実装ファイル
 ///	@author			Yuta Yoshinaga
 ///	@date			2018.04.01
 ///	$Version:		$
@@ -14,56 +14,60 @@
 ///   当方は一切その責任を負いません。
 ///
 ////////////////////////////////////////////////////////////////////////////////
-package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
+
+package jp.gr.java_conf.yuta_yoshinaga.reversi.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPoint;
+
 ////////////////////////////////////////////////////////////////////////////////
-///	@class		ResJsonTest
-///	@brief		レスポンスJSONテストクラス
+///	@class		ReversiPointTest
+///	@brief		リバーシポイントテストクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-class ResJsonTest extends ResJson {
+class ReversiPointTest extends ReversiPoint
+{
 
 	@Test
-	void testGetAuth() {
-		String tgt = this.getAuth();
+	void testGetX() {
+		int x = this.getX();
 		boolean flag = false;
-		if(tgt.isEmpty())	flag = true;
+		if(x == 0)	flag = true;
 		assertTrue(flag);
 	}
 
 	@Test
-	void testSetAuth() {
-		this.setAuth("test");
-		String tgt = this.getAuth();
+	void testSetX() {
+		this.setX(1);
+		int x = this.getX();
 		boolean flag = false;
-		if(tgt.equals("test"))	flag = true;
+		if(x == 1)	flag = true;
 		assertTrue(flag);
 	}
 
 	@Test
-	void testGetCallbacks() {
-		CallbacksJson tgt = this.getCallbacks();
+	void testGetY() {
+		int y = this.getY();
 		boolean flag = false;
-		if(tgt != null)	flag = true;
+		if(y == 0)	flag = true;
 		assertTrue(flag);
 	}
 
 	@Test
-	void testSetCallbacks() {
-		this.setCallbacks(new CallbacksJson());
-		CallbacksJson tgt = this.getCallbacks();
+	void testSetY() {
+		this.setY(1);
+		int y = this.getY();
 		boolean flag = false;
-		if(tgt != null)	flag = true;
+		if(y == 1)	flag = true;
 		assertTrue(flag);
 	}
 
 	@Test
-	void testResJson() {
-		ResJson tgt = new ResJson();
+	void testReversiPoint() {
+		ReversiPoint tgt = new ReversiPoint();
 		boolean flag = false;
 		if(tgt != null)	flag = true;
 		assertTrue(flag);

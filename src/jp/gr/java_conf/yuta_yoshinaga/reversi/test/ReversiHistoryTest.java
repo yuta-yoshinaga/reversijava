@@ -15,11 +15,14 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////
 
-package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
+package jp.gr.java_conf.yuta_yoshinaga.reversi.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiHistory;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPoint;
 
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		ReversiHistoryTest

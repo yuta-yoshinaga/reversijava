@@ -17,12 +17,14 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
+
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		Reversi
 ///	@brief		リバーシクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class Reversi
+public class Reversi implements Serializable
 {
 	private int mMasuSts[][];											//!< マスの状態
 	private int mMasuStsOld[][];										//!< 以前のマスの状態

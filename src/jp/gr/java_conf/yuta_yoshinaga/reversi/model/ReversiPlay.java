@@ -17,6 +17,7 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
 import java.util.Random;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -24,7 +25,7 @@ import java.util.Random;
 ///	@brief		リバーシプレイクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ReversiPlay
+public class ReversiPlay implements Serializable
 {
 	private Reversi mReversi;								//!< リバーシクラス
 	private ReversiSetting mSetting;						//!< リバーシ設定クラス

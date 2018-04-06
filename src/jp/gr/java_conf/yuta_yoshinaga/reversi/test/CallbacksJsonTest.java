@@ -14,13 +14,16 @@
 ///   当方は一切その責任を負いません。
 ///
 ////////////////////////////////////////////////////////////////////////////////
-package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
+package jp.gr.java_conf.yuta_yoshinaga.reversi.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 
 import org.junit.jupiter.api.Test;
+
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.CallbacksJson;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.FuncsJson;
 
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		CallbacksJsonTest

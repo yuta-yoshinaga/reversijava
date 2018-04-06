@@ -17,12 +17,14 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
+
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		ReversiSetting
 ///	@brief		アプリ設定クラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ReversiSetting
+public class ReversiSetting implements Serializable
 {
 	private int mMode;														//!< 現在のモード
 	private int mType;														//!< 現在のタイプ

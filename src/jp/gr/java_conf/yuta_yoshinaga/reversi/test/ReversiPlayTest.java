@@ -15,13 +15,20 @@
 ///
 ////////////////////////////////////////////////////////////////////////////////
 
-package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
+package jp.gr.java_conf.yuta_yoshinaga.reversi.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Random;
 
 import org.junit.jupiter.api.Test;
+
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiConst;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPlay;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPlayDelegate;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPoint;
+import jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiSetting;
 
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		ReversiPlayTest

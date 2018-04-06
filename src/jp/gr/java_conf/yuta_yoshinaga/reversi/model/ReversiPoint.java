@@ -17,12 +17,14 @@
 
 package jp.gr.java_conf.yuta_yoshinaga.reversi.model;
 
+import java.io.Serializable;
+
 ////////////////////////////////////////////////////////////////////////////////
 ///	@class		ReversiPoint
 ///	@brief		リバーシポイントクラス
 ///
 ////////////////////////////////////////////////////////////////////////////////
-public class ReversiPoint
+public class ReversiPoint implements Serializable
 {
 	private int x;
 	private int y;
