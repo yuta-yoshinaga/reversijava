@@ -47,162 +47,502 @@ public class Reversi implements Serializable
 	private ReversiHistory mMasuHist[];									//!< 履歴
 	private int mMasuHistCur;											//!< 履歴現在位置
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuSts()
+	///	@return			int mMasuSts[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuSts() {
 		return mMasuSts;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuSts(int[][] mMasuSts)
+	///	@param[in]		int[][] mMasuSts
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuSts(int[][] mMasuSts) {
 		this.mMasuSts = mMasuSts;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuStsOld()
+	///	@return			int mMasuStsOld[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuStsOld() {
 		return mMasuStsOld;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsOld(int[][] mMasuStsOld)
+	///	@param[in]		int[][] mMasuStsOld
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsOld(int[][] mMasuStsOld) {
 		this.mMasuStsOld = mMasuStsOld;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuStsEnaB()
+	///	@return			int mMasuStsEnaB[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuStsEnaB() {
 		return mMasuStsEnaB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsEnaB(int[][] mMasuStsEnaB)
+	///	@param[in]		int[][] mMasuStsEnaB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsEnaB(int[][] mMasuStsEnaB) {
 		this.mMasuStsEnaB = mMasuStsEnaB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuStsCntB()
+	///	@return			int mMasuStsCntB[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuStsCntB() {
 		return mMasuStsCntB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsCntB(int[][] mMasuStsCntB)
+	///	@param[in]		int[][] mMasuStsCntB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsCntB(int[][] mMasuStsCntB) {
 		this.mMasuStsCntB = mMasuStsCntB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuStsPassB()
+	///	@return			int mMasuStsPassB[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuStsPassB() {
 		return mMasuStsPassB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsPassB(int[][] mMasuStsPassB)
+	///	@param[in]		int[][] mMasuStsPassB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsPassB(int[][] mMasuStsPassB) {
 		this.mMasuStsPassB = mMasuStsPassB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiAnz[][] getmMasuStsAnzB()
+	///	@return			ReversiAnz mMasuStsAnzB[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiAnz[][] getmMasuStsAnzB() {
 		return mMasuStsAnzB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsAnzB(ReversiAnz[][] mMasuStsAnzB)
+	///	@param[in]		ReversiAnz[][] mMasuStsAnzB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsAnzB(ReversiAnz[][] mMasuStsAnzB) {
 		this.mMasuStsAnzB = mMasuStsAnzB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiPoint[] getmMasuPointB()
+	///	@return			ReversiPoint mMasuPointB[]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiPoint[] getmMasuPointB() {
 		return mMasuPointB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuPointB(ReversiPoint[] mMasuPointB)
+	///	@param[in]		ReversiPoint[] mMasuPointB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuPointB(ReversiPoint[] mMasuPointB) {
 		this.mMasuPointB = mMasuPointB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmMasuPointCntB()
+	///	@return			int mMasuPointCntB
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmMasuPointCntB() {
 		return mMasuPointCntB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuPointCntB(int mMasuPointCntB)
+	///	@param[in]		int mMasuPointCntB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuPointCntB(int mMasuPointCntB) {
 		this.mMasuPointCntB = mMasuPointCntB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmMasuBetCntB()
+	///	@return			int mMasuBetCntB
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmMasuBetCntB() {
 		return mMasuBetCntB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuBetCntB(int mMasuBetCntB)
+	///	@param[in]		int mMasuBetCntB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuBetCntB(int mMasuBetCntB) {
 		this.mMasuBetCntB = mMasuBetCntB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuStsEnaW()
+	///	@return			int mMasuStsEnaW[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuStsEnaW() {
 		return mMasuStsEnaW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsEnaW(int[][] mMasuStsEnaW)
+	///	@param[in]		int[][] mMasuStsEnaW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsEnaW(int[][] mMasuStsEnaW) {
 		this.mMasuStsEnaW = mMasuStsEnaW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuStsCntW()
+	///	@return			int mMasuStsCntW[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuStsCntW() {
 		return mMasuStsCntW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsCntW(int[][] mMasuStsCntW)
+	///	@param[in]		int[][] mMasuStsCntW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsCntW(int[][] mMasuStsCntW) {
 		this.mMasuStsCntW = mMasuStsCntW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int[][] getmMasuStsPassW()
+	///	@return			int mMasuStsPassW[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int[][] getmMasuStsPassW() {
 		return mMasuStsPassW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsPassW(int[][] mMasuStsPassW)
+	///	@param[in]		int[][] mMasuStsPassW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsPassW(int[][] mMasuStsPassW) {
 		this.mMasuStsPassW = mMasuStsPassW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiAnz[][] getmMasuStsAnzW()
+	///	@return			ReversiAnz mMasuStsAnzW[][]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiAnz[][] getmMasuStsAnzW() {
 		return mMasuStsAnzW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuStsAnzW(ReversiAnz[][] mMasuStsAnzW)
+	///	@param[in]		ReversiAnz[][] mMasuStsAnzW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuStsAnzW(ReversiAnz[][] mMasuStsAnzW) {
 		this.mMasuStsAnzW = mMasuStsAnzW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiPoint[] getmMasuPointW()
+	///	@return			ReversiPoint mMasuPointW[]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiPoint[] getmMasuPointW() {
 		return mMasuPointW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuPointW(ReversiPoint[] mMasuPointW)
+	///	@param[in]		ReversiPoint[] mMasuPointW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuPointW(ReversiPoint[] mMasuPointW) {
 		this.mMasuPointW = mMasuPointW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmMasuPointCntW()
+	///	@return			int mMasuPointCntW
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmMasuPointCntW() {
 		return mMasuPointCntW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuPointCntW(int mMasuPointCntW)
+	///	@param[in]		int mMasuPointCntW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuPointCntW(int mMasuPointCntW) {
 		this.mMasuPointCntW = mMasuPointCntW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmMasuBetCntW()
+	///	@return			int mMasuBetCntW
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmMasuBetCntW() {
 		return mMasuBetCntW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuBetCntW(int mMasuBetCntW)
+	///	@param[in]		int mMasuBetCntW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuBetCntW(int mMasuBetCntW) {
 		this.mMasuBetCntW = mMasuBetCntW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmMasuCnt()
+	///	@return			int mMasuCnt
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmMasuCnt() {
 		return mMasuCnt;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuCnt(int mMasuCnt)
+	///	@param[in]		int mMasuCnt
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuCnt(int mMasuCnt) {
 		this.mMasuCnt = mMasuCnt;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmMasuCntMax()
+	///	@return			int mMasuCntMax
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmMasuCntMax() {
 		return mMasuCntMax;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuCntMax(int mMasuCntMax)
+	///	@param[in]		int mMasuCntMax
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuCntMax(int mMasuCntMax) {
 		this.mMasuCntMax = mMasuCntMax;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiHistory[] getmMasuHist()
+	///	@return			ReversiHistory mMasuHist[]
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiHistory[] getmMasuHist() {
 		return mMasuHist;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuHist(ReversiHistory[] mMasuHist)
+	///	@param[in]		ReversiHistory[] mMasuHist
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuHist(ReversiHistory[] mMasuHist) {
 		this.mMasuHist = mMasuHist;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmMasuHistCur()
+	///	@return			int mMasuHistCur
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmMasuHistCur() {
 		return mMasuHistCur;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmMasuHistCur(int mMasuHistCur)
+	///	@param[in]		int mMasuHistCur
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmMasuHistCur(int mMasuHistCur) {
 		this.mMasuHistCur = mMasuHistCur;
 	}
@@ -333,7 +673,7 @@ public class Reversi implements Serializable
 		}
 
 		loop = this.mMasuCnt * this.mMasuCnt;
-		for(int i = 0;i < loop;i++){									// 初期化
+		for(int i = 0;i < loop;i++){										// 初期化
 			if(color == ReversiConst.REVERSI_STS_BLACK){
 				this.mMasuPointB[i].setX(0);
 				this.mMasuPointB[i].setY(0);
@@ -354,7 +694,7 @@ public class Reversi implements Serializable
 			for(int j = 0;j < this.mMasuCnt;j++){
 				okflg = 0;
 				count2 = 0;
-				if(this.mMasuSts[i][j] == ReversiConst.REVERSI_STS_NONE){					// 何も置かれていないマスなら
+				if(this.mMasuSts[i][j] == ReversiConst.REVERSI_STS_NONE){	// 何も置かれていないマスなら
 					cnt1 = i;
 					count1 = flg =0;
 					// *** 上方向を調べる *** //
@@ -730,23 +1070,23 @@ public class Reversi implements Serializable
 			if(getColorEna(ReversiConst.REVERSI_STS_WHITE) != 0){				// 相手がパス
 				this.mMasuStsPassB[tmpY][tmpX] = 1;
 			}
-			if(this.getEdgeSideZero(tmpY,tmpX) == 0){				// 置いた場所が角
+			if(this.getEdgeSideZero(tmpY,tmpX) == 0){							// 置いた場所が角
 				this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeCnt() + 1);
 				this.mMasuStsAnzB[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzB[tmpY][tmpX].getGoodPoint() + 10000 * this.mMasuStsCntB[tmpY][tmpX]);
-			}else if(this.getEdgeSideOne(tmpY,tmpX) == 0){			// 置いた場所が角の一つ手前
+			}else if(this.getEdgeSideOne(tmpY,tmpX) == 0){						// 置いた場所が角の一つ手前
 				this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideOneCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideOneCnt() + 1);
 				if(checkEdge(ReversiConst.REVERSI_STS_BLACK,tmpY,tmpX) != 0){	// 角を取られない
 					this.mMasuStsAnzB[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzB[tmpY][tmpX].getGoodPoint() + 10 * this.mMasuStsCntB[tmpY][tmpX]);
-				}else{												// 角を取られる
+				}else{															// 角を取られる
 					this.mMasuStsAnzB[tmpY][tmpX].setBadPoint(this.mMasuStsAnzB[tmpY][tmpX].getBadPoint() + 100000);
 				}
-			}else if(this.getEdgeSideTwo(tmpY,tmpX) == 0){			// 置いた場所が角の二つ手前
+			}else if(this.getEdgeSideTwo(tmpY,tmpX) == 0){						// 置いた場所が角の二つ手前
 				this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideTwoCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideTwoCnt() + 1);
 				this.mMasuStsAnzB[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzB[tmpY][tmpX].getGoodPoint() + 1000 * this.mMasuStsCntB[tmpY][tmpX]);
-			}else if(this.getEdgeSideThree(tmpY,tmpX) == 0){		// 置いた場所が角の三つ手前
+			}else if(this.getEdgeSideThree(tmpY,tmpX) == 0){					// 置いた場所が角の三つ手前
 				this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideThreeCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideThreeCnt() + 1);
 				this.mMasuStsAnzB[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzB[tmpY][tmpX].getGoodPoint() + 100 * this.mMasuStsCntB[tmpY][tmpX]);
-			}else{													// 置いた場所がその他
+			}else{																// 置いた場所がその他
 				this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideOtherCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideOtherCnt() + 1);
 				this.mMasuStsAnzB[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzB[tmpY][tmpX].getGoodPoint() + 10 * this.mMasuStsCntB[tmpY][tmpX]);
 			}
@@ -757,54 +1097,54 @@ public class Reversi implements Serializable
 					tmpBadPoint = 0;
 					tmpGoodPoint = 0;
 					if(this.getMasuStsEna(ReversiConst.REVERSI_STS_WHITE,i,j) != 0){
-						sum += this.mMasuStsCntW[i][j];					// 相手の獲得予定枚数
+						sum += this.mMasuStsCntW[i][j];							// 相手の獲得予定枚数
 						// *** 相手の獲得予定の最大数保持 *** //
 						if(this.mMasuStsAnzB[tmpY][tmpX].getMax() < this.mMasuStsCntW[i][j]) this.mMasuStsAnzB[tmpY][tmpX].setMax(this.mMasuStsCntW[i][j]);
 						// *** 相手の獲得予定の最小数保持 *** //
 						if(this.mMasuStsCntW[i][j] < this.mMasuStsAnzB[tmpY][tmpX].getMin()) this.mMasuStsAnzB[tmpY][tmpX].setMin(this.mMasuStsCntW[i][j]);
-						this.mMasuStsAnzB[tmpY][tmpX].setPointCnt(this.mMasuStsAnzB[tmpY][tmpX].getPointCnt() + 1);		// 相手の置ける場所の数
-						if(this.getEdgeSideZero(i,j) == 0){			// 置く場所が角
+						this.mMasuStsAnzB[tmpY][tmpX].setPointCnt(this.mMasuStsAnzB[tmpY][tmpX].getPointCnt() + 1);			// 相手の置ける場所の数
+						if(this.getEdgeSideZero(i,j) == 0){						// 置く場所が角
 							this.mMasuStsAnzB[tmpY][tmpX].setEdgeCnt(this.mMasuStsAnzB[tmpY][tmpX].getEdgeCnt() + 1);
 							tmpBadPoint = 100000 * this.mMasuStsCntW[i][j];
-						}else if(this.getEdgeSideOne(i,j) == 0){	// 置く場所が角の一つ手前
+						}else if(this.getEdgeSideOne(i,j) == 0){				// 置く場所が角の一つ手前
 							this.mMasuStsAnzB[tmpY][tmpX].setEdgeSideOneCnt(this.mMasuStsAnzB[tmpY][tmpX].getEdgeSideOneCnt() + 1);
 							tmpBadPoint = 0;
-						}else if(this.getEdgeSideTwo(i,j) == 0){	// 置く場所が角の二つ手前
+						}else if(this.getEdgeSideTwo(i,j) == 0){				// 置く場所が角の二つ手前
 							this.mMasuStsAnzB[tmpY][tmpX].setEdgeSideTwoCnt(this.mMasuStsAnzB[tmpY][tmpX].getEdgeSideTwoCnt() + 1);
 							tmpBadPoint = 1 * this.mMasuStsCntW[i][j];
-						}else if(this.getEdgeSideThree(i,j) == 0){	// 置く場所が角の三つ手前
+						}else if(this.getEdgeSideThree(i,j) == 0){				// 置く場所が角の三つ手前
 							this.mMasuStsAnzB[tmpY][tmpX].setEdgeSideThreeCnt(this.mMasuStsAnzB[tmpY][tmpX].getEdgeSideThreeCnt() + 1);
 							tmpBadPoint = 1 * this.mMasuStsCntW[i][j];
-						}else{										// 置く場所がその他
+						}else{													// 置く場所がその他
 							this.mMasuStsAnzB[tmpY][tmpX].setEdgeSideOtherCnt(this.mMasuStsAnzB[tmpY][tmpX].getEdgeSideOtherCnt() + 1);
 							tmpBadPoint = 1 * this.mMasuStsCntW[i][j];
 						}
-						if(tmpMasuEnaW[i][j] != 0) tmpBadPoint = 0;	// ステータス変化していないなら
+						if(tmpMasuEnaW[i][j] != 0) tmpBadPoint = 0;				// ステータス変化していないなら
 					}
 					if(this.getMasuStsEna(ReversiConst.REVERSI_STS_BLACK,i,j) != 0){
-						sumOwn += this.mMasuStsCntB[i][j];				// 自分の獲得予定枚数
+						sumOwn += this.mMasuStsCntB[i][j];						// 自分の獲得予定枚数
 						// *** 自分の獲得予定の最大数保持 *** //
 						if(this.mMasuStsAnzB[tmpY][tmpX].getOwnMax() < this.mMasuStsCntB[i][j]) this.mMasuStsAnzB[tmpY][tmpX].setOwnMax(this.mMasuStsCntB[i][j]);
 						// *** 自分の獲得予定の最小数保持 *** //
 						if(this.mMasuStsCntB[i][j] < this.mMasuStsAnzB[tmpY][tmpX].getOwnMin()) this.mMasuStsAnzB[tmpY][tmpX].setOwnMin(this.mMasuStsCntB[i][j]);
-						this.mMasuStsAnzB[tmpY][tmpX].setOwnPointCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnPointCnt() + 1);		// 自分の置ける場所の数
-						if(this.getEdgeSideZero(i,j) == 0){			// 置く場所が角
+						this.mMasuStsAnzB[tmpY][tmpX].setOwnPointCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnPointCnt() + 1);	// 自分の置ける場所の数
+						if(this.getEdgeSideZero(i,j) == 0){						// 置く場所が角
 							this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeCnt() + 1);
 							tmpGoodPoint = 100 * this.mMasuStsCntB[i][j];
-						}else if(this.getEdgeSideOne(i,j) == 0){	// 置く場所が角の一つ手前
+						}else if(this.getEdgeSideOne(i,j) == 0){				// 置く場所が角の一つ手前
 							this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideOneCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideOneCnt() + 1);
 							tmpGoodPoint = 0;
-						}else if(this.getEdgeSideTwo(i,j) == 0){	// 置く場所が角の二つ手前
+						}else if(this.getEdgeSideTwo(i,j) == 0){				// 置く場所が角の二つ手前
 							this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideTwoCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideTwoCnt() + 1);
 							tmpGoodPoint = 3 * this.mMasuStsCntB[i][j];
-						}else if(this.getEdgeSideThree(i,j) == 0){	// 置く場所が角の三つ手前
+						}else if(this.getEdgeSideThree(i,j) == 0){				// 置く場所が角の三つ手前
 							this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideThreeCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideThreeCnt() + 1);
 							tmpGoodPoint = 2 * this.mMasuStsCntB[i][j];
-						}else{										// 置く場所がその他
+						}else{													// 置く場所がその他
 							this.mMasuStsAnzB[tmpY][tmpX].setOwnEdgeSideOtherCnt(this.mMasuStsAnzB[tmpY][tmpX].getOwnEdgeSideOtherCnt() + 1);
 							tmpGoodPoint = 1 * this.mMasuStsCntB[i][j];
 						}
-						if(tmpMasuEnaB[i][j] != 0) tmpGoodPoint = 0;// ステータス変化していないなら
+						if(tmpMasuEnaB[i][j] != 0) tmpGoodPoint = 0;			// ステータス変化していないなら
 					}
 					if(tmpBadPoint != 0)	this.mMasuStsAnzB[tmpY][tmpX].setBadPoint(this.mMasuStsAnzB[tmpY][tmpX].getBadPoint()	+ tmpBadPoint);
 					if(tmpGoodPoint != 0)	this.mMasuStsAnzB[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzB[tmpY][tmpX].getGoodPoint() + tmpGoodPoint);
@@ -863,30 +1203,30 @@ public class Reversi implements Serializable
 			tmpY = this.mMasuPointW[cnt].getY();
 			tmpX = this.mMasuPointW[cnt].getX();
 			this.mMasuSts[tmpY][tmpX] = ReversiConst.REVERSI_STS_WHITE;				// 仮に置く
-			this.revMasuSts(ReversiConst.REVERSI_STS_WHITE,tmpY,tmpX);			// 仮にひっくり返す
+			this.revMasuSts(ReversiConst.REVERSI_STS_WHITE,tmpY,tmpX);				// 仮にひっくり返す
 			this.makeMasuSts(ReversiConst.REVERSI_STS_BLACK);
 			this.makeMasuSts(ReversiConst.REVERSI_STS_WHITE);
 			// *** このマスに置いた場合の解析を行う *** //
-			if(getColorEna(ReversiConst.REVERSI_STS_BLACK) != 0){				// 相手がパス
+			if(getColorEna(ReversiConst.REVERSI_STS_BLACK) != 0){					// 相手がパス
 				this.mMasuStsPassW[tmpY][tmpX] = 1;
 			}
-			if(this.getEdgeSideZero(tmpY,tmpX) == 0){				// 置いた場所が角
+			if(this.getEdgeSideZero(tmpY,tmpX) == 0){								// 置いた場所が角
 				this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeCnt() + 1);
 				this.mMasuStsAnzW[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzW[tmpY][tmpX].getGoodPoint() + 10000 * this.mMasuStsCntW[tmpY][tmpX]);
-			}else if(this.getEdgeSideOne(tmpY,tmpX) == 0){			// 置いた場所が角の一つ手前
+			}else if(this.getEdgeSideOne(tmpY,tmpX) == 0){							// 置いた場所が角の一つ手前
 				this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideOneCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideOneCnt() + 1);
-				if(checkEdge(ReversiConst.REVERSI_STS_WHITE,tmpY,tmpX) != 0){	// 角を取られない
+				if(checkEdge(ReversiConst.REVERSI_STS_WHITE,tmpY,tmpX) != 0){		// 角を取られない
 					this.mMasuStsAnzW[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzW[tmpY][tmpX].getGoodPoint() + 10 * this.mMasuStsCntW[tmpY][tmpX]);
-				}else{												// 角を取られる
+				}else{																// 角を取られる
 					this.mMasuStsAnzW[tmpY][tmpX].setBadPoint(this.mMasuStsAnzW[tmpY][tmpX].getBadPoint() + 100000);
 				}
-			}else if(this.getEdgeSideTwo(tmpY,tmpX) == 0){			// 置いた場所が角の二つ手前
+			}else if(this.getEdgeSideTwo(tmpY,tmpX) == 0){							// 置いた場所が角の二つ手前
 				this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideTwoCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideTwoCnt() + 1);
 				this.mMasuStsAnzW[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzW[tmpY][tmpX].getGoodPoint() + 1000 * this.mMasuStsCntW[tmpY][tmpX]);
-			}else if(this.getEdgeSideThree(tmpY,tmpX) == 0){		// 置いた場所が角の三つ手前
+			}else if(this.getEdgeSideThree(tmpY,tmpX) == 0){						// 置いた場所が角の三つ手前
 				this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideThreeCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideThreeCnt() + 1);
 				this.mMasuStsAnzW[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzW[tmpY][tmpX].getGoodPoint() + 100 * this.mMasuStsCntW[tmpY][tmpX]);
-			}else{													// 置いた場所がその他
+			}else{																	// 置いた場所がその他
 				this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideOtherCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideOtherCnt() + 1);
 				this.mMasuStsAnzW[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzW[tmpY][tmpX].getGoodPoint() + 10 * this.mMasuStsCntW[tmpY][tmpX]);
 			}
@@ -897,54 +1237,54 @@ public class Reversi implements Serializable
 					tmpBadPoint = 0;
 					tmpGoodPoint = 0;
 					if(this.getMasuStsEna(ReversiConst.REVERSI_STS_BLACK,i,j) != 0){
-						sum += this.mMasuStsCntB[i][j];					// 相手の獲得予定枚数
+						sum += this.mMasuStsCntB[i][j];								// 相手の獲得予定枚数
 						// *** 相手の獲得予定の最大数保持 *** //
 						if(this.mMasuStsAnzW[tmpY][tmpX].getMax() < this.mMasuStsCntB[i][j]) this.mMasuStsAnzW[tmpY][tmpX].setMax(this.mMasuStsCntB[i][j]);
 						// *** 相手の獲得予定の最小数保持 *** //
 						if(this.mMasuStsCntB[i][j] < this.mMasuStsAnzW[tmpY][tmpX].getMin()) this.mMasuStsAnzW[tmpY][tmpX].setMin(this.mMasuStsCntB[i][j]);
-						this.mMasuStsAnzW[tmpY][tmpX].setPointCnt(this.mMasuStsAnzW[tmpY][tmpX].getPointCnt() + 1);		// 相手の置ける場所の数
-						if(this.getEdgeSideZero(i,j) == 0){			// 置く場所が角
+						this.mMasuStsAnzW[tmpY][tmpX].setPointCnt(this.mMasuStsAnzW[tmpY][tmpX].getPointCnt() + 1);			// 相手の置ける場所の数
+						if(this.getEdgeSideZero(i,j) == 0){							// 置く場所が角
 							this.mMasuStsAnzW[tmpY][tmpX].setEdgeCnt(this.mMasuStsAnzW[tmpY][tmpX].getEdgeCnt() + 1);
 							tmpBadPoint = 100000 * this.mMasuStsCntB[i][j];
-						}else if(this.getEdgeSideOne(i,j) == 0){	// 置く場所が角の一つ手前
+						}else if(this.getEdgeSideOne(i,j) == 0){					// 置く場所が角の一つ手前
 							this.mMasuStsAnzW[tmpY][tmpX].setEdgeSideOneCnt(this.mMasuStsAnzW[tmpY][tmpX].getEdgeSideOneCnt() + 1);
 							tmpBadPoint = 0;
-						}else if(this.getEdgeSideTwo(i,j) == 0){	// 置く場所が角の二つ手前
+						}else if(this.getEdgeSideTwo(i,j) == 0){					// 置く場所が角の二つ手前
 							this.mMasuStsAnzW[tmpY][tmpX].setEdgeSideTwoCnt(this.mMasuStsAnzW[tmpY][tmpX].getEdgeSideTwoCnt() + 1);
 							tmpBadPoint = 1 * this.mMasuStsCntB[i][j];
-						}else if(this.getEdgeSideThree(i,j) == 0){	// 置く場所が角の三つ手前
+						}else if(this.getEdgeSideThree(i,j) == 0){					// 置く場所が角の三つ手前
 							this.mMasuStsAnzW[tmpY][tmpX].setEdgeSideThreeCnt(this.mMasuStsAnzW[tmpY][tmpX].getEdgeSideThreeCnt() + 1);
 							tmpBadPoint = 1 * this.mMasuStsCntB[i][j];
-						}else{										// 置く場所がその他
+						}else{														// 置く場所がその他
 							this.mMasuStsAnzW[tmpY][tmpX].setEdgeSideOtherCnt(this.mMasuStsAnzW[tmpY][tmpX].getEdgeSideOtherCnt() + 1);
 							tmpBadPoint = 1 * this.mMasuStsCntB[i][j];
 						}
-						if(tmpMasuEnaB[i][j] != 0) tmpBadPoint = 0;	// ステータス変化していないなら
+						if(tmpMasuEnaB[i][j] != 0) tmpBadPoint = 0;					// ステータス変化していないなら
 					}
 					if(this.getMasuStsEna(ReversiConst.REVERSI_STS_WHITE,i,j) != 0){
-						sumOwn += this.mMasuStsCntW[i][j];				// 自分の獲得予定枚数
+						sumOwn += this.mMasuStsCntW[i][j];							// 自分の獲得予定枚数
 						// *** 自分の獲得予定の最大数保持 *** //
 						if(this.mMasuStsAnzW[tmpY][tmpX].getOwnMax() < this.mMasuStsCntW[i][j]) this.mMasuStsAnzW[tmpY][tmpX].setOwnMax(this.mMasuStsCntW[i][j]);
 						// *** 自分の獲得予定の最小数保持 *** //
 						if(this.mMasuStsCntW[i][j] < this.mMasuStsAnzW[tmpY][tmpX].getOwnMin()) this.mMasuStsAnzW[tmpY][tmpX].setOwnMin(this.mMasuStsCntW[i][j]);
-						this.mMasuStsAnzW[tmpY][tmpX].setOwnPointCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnPointCnt() + 1);		// 自分の置ける場所の数
-						if(this.getEdgeSideZero(i,j) == 0){			// 置く場所が角
+						this.mMasuStsAnzW[tmpY][tmpX].setOwnPointCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnPointCnt() + 1);	// 自分の置ける場所の数
+						if(this.getEdgeSideZero(i,j) == 0){							// 置く場所が角
 							this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeCnt() + 1);
 							tmpGoodPoint = 100 * this.mMasuStsCntW[i][j];
-						}else if(this.getEdgeSideOne(i,j) == 0){	// 置く場所が角の一つ手前
+						}else if(this.getEdgeSideOne(i,j) == 0){					// 置く場所が角の一つ手前
 							this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideOneCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideOneCnt() + 1);
 							tmpGoodPoint = 0;
-						}else if(this.getEdgeSideTwo(i,j) == 0){	// 置く場所が角の二つ手前
+						}else if(this.getEdgeSideTwo(i,j) == 0){					// 置く場所が角の二つ手前
 							this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideTwoCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideTwoCnt() + 1);
 							tmpGoodPoint = 3 * this.mMasuStsCntW[i][j];
-						}else if(this.getEdgeSideThree(i,j) == 0){	// 置く場所が角の三つ手前
+						}else if(this.getEdgeSideThree(i,j) == 0){					// 置く場所が角の三つ手前
 							this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideThreeCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideThreeCnt() + 1);
 							tmpGoodPoint = 2 * this.mMasuStsCntW[i][j];
-						}else{										// 置く場所がその他
+						}else{														// 置く場所がその他
 							this.mMasuStsAnzW[tmpY][tmpX].setOwnEdgeSideOtherCnt(this.mMasuStsAnzW[tmpY][tmpX].getOwnEdgeSideOtherCnt() + 1);
 							tmpGoodPoint = 1 * this.mMasuStsCntW[i][j];
 						}
-						if(tmpMasuEnaW[i][j] != 0) tmpGoodPoint = 0;// ステータス変化していないなら
+						if(tmpMasuEnaW[i][j] != 0) tmpGoodPoint = 0;				// ステータス変化していないなら
 					}
 					if(tmpBadPoint != 0)	this.mMasuStsAnzW[tmpY][tmpX].setBadPoint(this.mMasuStsAnzW[tmpY][tmpX].getBadPoint() + tmpBadPoint);
 					if(tmpGoodPoint != 0)	this.mMasuStsAnzW[tmpY][tmpX].setGoodPoint(this.mMasuStsAnzW[tmpY][tmpX].getGoodPoint() + tmpGoodPoint);
@@ -986,7 +1326,7 @@ public class Reversi implements Serializable
 	public void AnalysisReversi(int bPassEna,int wPassEna)
 	{
 		// *** 相手をパスさせることができるマス検索 *** //
-		for(int i = 0;i < this.mMasuCnt;i++){							// 初期化
+		for(int i = 0;i < this.mMasuCnt;i++){						// 初期化
 			for(int j = 0;j < this.mMasuCnt;j++){
 				this.mMasuStsPassB[i][j] = 0;
 				this.mMasuStsAnzB[i][j].reset();

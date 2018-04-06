@@ -39,90 +39,277 @@ public class ReversiPlay implements Serializable
 	private Random r;										//!< 乱数
 	private ReversiPlayDelegate mDelegate;					//!< デリゲート
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				Reversi getmReversi()
+	///	@return			Reversi mReversi
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public Reversi getmReversi() {
 		return mReversi;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmReversi(Reversi mReversi)
+	///	@param[in]		Reversi mReversi
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmReversi(Reversi mReversi) {
 		this.mReversi = mReversi;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiSetting getmSetting()
+	///	@return			ReversiSetting mSetting
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiSetting getmSetting() {
 		return mSetting;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmSetting(ReversiSetting mSetting)
+	///	@param[in]		ReversiSetting mSetting
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmSetting(ReversiSetting mSetting) {
 		this.mSetting = mSetting;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmCurColor()
+	///	@return			int mCurColor
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmCurColor() {
 		return mCurColor;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmCurColor(int mCurColor)
+	///	@param[in]		int mCurColor
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmCurColor(int mCurColor) {
 		this.mCurColor = mCurColor;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiPoint[] getmCpu()
+	///	@return			ReversiPoint[] mCpu
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiPoint[] getmCpu() {
 		return mCpu;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmCpu(ReversiPoint[] mCpu)
+	///	@param[in]		ReversiPoint[] mCpu
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmCpu(ReversiPoint[] mCpu) {
 		this.mCpu = mCpu;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiPoint[] getmEdge()
+	///	@return			ReversiPoint[] mEdge
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiPoint[] getmEdge() {
 		return mEdge;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmEdge(ReversiPoint[] mEdge)
+	///	@param[in]		ReversiPoint[] mEdge
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmEdge(ReversiPoint[] mEdge) {
 		this.mEdge = mEdge;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmPassEnaB()
+	///	@return			int mPassEnaB
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmPassEnaB() {
 		return mPassEnaB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmPassEnaB(int mPassEnaB)
+	///	@param[in]		int mPassEnaB
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmPassEnaB(int mPassEnaB) {
 		this.mPassEnaB = mPassEnaB;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmPassEnaW()
+	///	@return			int mPassEnaW
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmPassEnaW() {
 		return mPassEnaW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmPassEnaW(int mPassEnaW)
+	///	@param[in]		int mPassEnaW
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmPassEnaW(int mPassEnaW) {
 		this.mPassEnaW = mPassEnaW;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmGameEndSts()
+	///	@return			int mGameEndSts
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmGameEndSts() {
 		return mGameEndSts;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmGameEndSts(int mGameEndSts)
+	///	@param[in]		int mGameEndSts
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmGameEndSts(int mGameEndSts) {
 		this.mGameEndSts = mGameEndSts;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				int getmPlayLock()
+	///	@return			int mPlayLock
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public int getmPlayLock() {
 		return mPlayLock;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmPlayLock(int mPlayLock)
+	///	@param[in]		int mPlayLock
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmPlayLock(int mPlayLock) {
 		this.mPlayLock = mPlayLock;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				Random getR()
+	///	@return			Random r
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public Random getR() {
 		return r;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setR(Random r)
+	///	@param[in]		Random r
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setR(Random r) {
 		this.r = r;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ReversiPlayDelegate getmDelegate()
+	///	@return			ReversiPlayDelegate mDelegate
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ReversiPlayDelegate getmDelegate() {
 		return mDelegate;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmDelegate(ReversiPlayDelegate mDelegate)
+	///	@param[in]		ReversiPlayDelegate mDelegate
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setmDelegate(ReversiPlayDelegate mDelegate) {
 		this.mDelegate = mDelegate;
 	}
@@ -180,15 +367,15 @@ public class ReversiPlay implements Serializable
 					// *** メッセージ送信 *** //
 					this.execMessage(ReversiConst.LC_MSG_ERASE_INFO_ALL, null);
 				}
-				this.sendDrawMsg(y, x);												// 描画
-				this.drawUpdate(ReversiConst.DEF_ASSIST_OFF);						// その他コマ描画
+				this.sendDrawMsg(y, x);														// 描画
+				this.drawUpdate(ReversiConst.DEF_ASSIST_OFF);								// その他コマ描画
 				if (this.mReversi.getGameEndSts() == 0) {
 					if (tmpCol == ReversiConst.REVERSI_STS_BLACK) tmpCol = ReversiConst.REVERSI_STS_WHITE;
 					else tmpCol = ReversiConst.REVERSI_STS_BLACK;
 					if (this.mReversi.getColorEna(tmpCol) == 0) {
 						if (this.mSetting.getmMode() == ReversiConst.DEF_MODE_ONE) {		// CPU対戦
 							cpuEna = 1;
-						} else {													// 二人対戦
+						} else {															// 二人対戦
 							this.mCurColor = tmpCol;
 							this.drawUpdate(this.mSetting.getmAssist());					// 次のプレイヤーコマ描画
 						}
@@ -214,7 +401,7 @@ public class ReversiPlay implements Serializable
 					if (this.mSetting.getmMode() == ReversiConst.DEF_MODE_ONE) {			// CPU対戦
 						update = 1;
 						cpuEna = 1;
-					} else {														// 二人対戦
+					} else {																// 二人対戦
 						this.mCurColor = tmpCol;
 					}
 				} else {
@@ -391,10 +578,10 @@ public class ReversiPlay implements Serializable
 						passCnt = 0;
 						if (color == ReversiConst.REVERSI_STS_BLACK) othColor = ReversiConst.REVERSI_STS_WHITE;
 						else othColor = ReversiConst.REVERSI_STS_BLACK;
-						othBet = this.mReversi.getBetCnt(othColor);				// 対戦相手のコマ数
-						ownBet = this.mReversi.getBetCnt(color);				// 自分のコマ数
+						othBet = this.mReversi.getBetCnt(othColor);					// 対戦相手のコマ数
+						ownBet = this.mReversi.getBetCnt(color);					// 自分のコマ数
 						endZone = 0;
-						if ((loop - (othBet + ownBet)) <= 16) endZone = 1;		// ゲーム終盤フラグON
+						if ((loop - (othBet + ownBet)) <= 16) endZone = 1;			// ゲーム終盤フラグON
 						for (int i = 0; i < loop; i++) {
 							this.mCpu[i].setX(0);
 							this.mCpu[i].setY (0);
@@ -500,7 +687,7 @@ public class ReversiPlay implements Serializable
 									}
 								}
 								if (mem2 != -1) {
-									if (endZone != 0) {							// 終盤なら枚数重視
+									if (endZone != 0) {								// 終盤なら枚数重視
 										if (mem3 != -1) {
 											mem2 = mem3;
 										}
@@ -552,7 +739,7 @@ public class ReversiPlay implements Serializable
 									}
 								}
 								if (mem2 != -1) {
-									if (endZone != 0) {							// 終盤なら枚数重視
+									if (endZone != 0) {								// 終盤なら枚数重視
 										if (mem3 != -1) {
 											mem2 = mem3;
 										}
@@ -589,7 +776,7 @@ public class ReversiPlay implements Serializable
 
 					if (this.mReversi.setMasuSts(color, setY, setX) == 0) {
 						if (this.mSetting.getmType() == ReversiConst.DEF_TYPE_HARD) this.mReversi.AnalysisReversi(this.mPassEnaB, this.mPassEnaW);
-						this.sendDrawMsg(setY, setX);							// 描画
+						this.sendDrawMsg(setY, setX);								// 描画
 						update = 1;
 					}
 				}
@@ -693,7 +880,7 @@ public class ReversiPlay implements Serializable
 		this.mCurColor = this.mSetting.getmPlayer();
 		if (this.mSetting.getmMode() == ReversiConst.DEF_MODE_TWO) this.mCurColor = ReversiConst.REVERSI_STS_BLACK;
 
-		this.mReversi.setMasuCnt(this.mSetting.getmMasuCnt());											// マスの数設定
+		this.mReversi.setMasuCnt(this.mSetting.getmMasuCnt());										// マスの数設定
 
 		this.mReversi.reset();
 		if (this.mSetting.getmMode() == ReversiConst.DEF_MODE_ONE) {

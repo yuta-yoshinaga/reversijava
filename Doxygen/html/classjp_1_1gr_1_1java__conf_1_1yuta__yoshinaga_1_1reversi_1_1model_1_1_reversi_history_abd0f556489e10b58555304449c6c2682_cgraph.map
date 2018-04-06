@@ -1,3 +1,5 @@
 <map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiHistory.ReversiHistory" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiHistory.ReversiHistory">
-<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_history.html#aee0155159a017671c2b18c1d8229d8d1" title="リセット " alt="" coords="268,5,483,61"/>
+<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_history.html#aee0155159a017671c2b18c1d8229d8d1" title="リセット " alt="" coords="268,45,483,101"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html#a24da8d887cae320a2ca8b4c80665227c" title="セッター " alt="" coords="531,5,745,61"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html#a7ba3fb3aedb0d02d79ec62f4645bb8cf" title="セッター " alt="" coords="531,85,745,141"/>
 </map>
