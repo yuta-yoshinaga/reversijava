@@ -26,21 +26,55 @@ import java.io.Serializable;
 ////////////////////////////////////////////////////////////////////////////////
 public class ResJson implements Serializable
 {
-	private String auth;
-	private CallbacksJson callbacks;
+	private String auth;										//!< リターン値
+	private CallbacksJson callbacks;							//!< コールバックス
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				String getAuth()
+	///	@return			String auth
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public String getAuth() {
 		return auth;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setAuth(String auth)
+	///	@param[in]		String auth
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setAuth(String auth) {
 		this.auth = auth;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				CallbacksJson getCallbacks()
+	///	@return			CallbacksJson callbacks
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public CallbacksJson getCallbacks() {
 		return callbacks;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setCallbacks(CallbacksJson callbacks)
+	///	@param[in]		String callbacks
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setCallbacks(CallbacksJson callbacks) {
 		this.callbacks = callbacks;
 	}

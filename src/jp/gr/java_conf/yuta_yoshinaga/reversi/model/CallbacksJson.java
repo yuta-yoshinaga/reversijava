@@ -27,12 +27,29 @@ import java.util.ArrayList;
 ////////////////////////////////////////////////////////////////////////////////
 public class CallbacksJson implements Serializable
 {
-	private ArrayList<FuncsJson> funcs;
+	private ArrayList<FuncsJson> funcs;							//<! ファンクションズ
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				ArrayList<FuncsJson> getFuncs()
+	///	@return			ArrayList<FuncsJson> funcs
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public ArrayList<FuncsJson> getFuncs() {
 		return funcs;
 	}
 
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setFuncs(ArrayList<FuncsJson> funcs)
+	///	@param[in]		ArrayList<FuncsJson> funcs
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
 	public void setFuncs(ArrayList<FuncsJson> funcs) {
 		this.funcs = funcs;
 	}
