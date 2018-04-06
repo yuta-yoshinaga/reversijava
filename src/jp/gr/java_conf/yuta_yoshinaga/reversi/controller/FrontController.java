@@ -62,23 +62,6 @@ public class FrontController extends HttpServlet implements ReversiPlayInterface
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
-	///	@brief			GET
-	///	@fn				protected void doGet(HttpServletRequest request, HttpServletResponse response)
-	///	@param[in]		HttpServletRequest request
-	///	@param[in,out]	HttpServletResponse response
-	///	@return			ありません
-	///	@author			Yuta Yoshinaga
-	///	@date			2018.04.01
-	/// @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	///
-	////////////////////////////////////////////////////////////////////////////////
-	protected void doGet(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
-
-	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			POST
 	///	@fn				protected void doPost(HttpServletRequest request, HttpServletResponse response)
 	///	@param[in]		HttpServletRequest request
