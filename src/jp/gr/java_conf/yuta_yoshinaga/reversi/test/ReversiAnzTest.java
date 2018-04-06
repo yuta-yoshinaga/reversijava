@@ -1,5 +1,5 @@
 ////////////////////////////////////////////////////////////////////////////////
-///	@file			ReversiAnz.java
+///	@file			ReversiAnzTest.java
 ///	@brief			リバーシ解析テストクラス実装ファイル
 ///	@author			Yuta Yoshinaga
 ///	@date			2018.04.01

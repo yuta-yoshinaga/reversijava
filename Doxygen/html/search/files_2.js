@@ -4,6 +4,7 @@ var searchData=
   ['resjsontest_2ejava',['ResJsonTest.java',['../_res_json_test_8java.html',1,'']]],
   ['reversi_2ejava',['Reversi.java',['../_reversi_8java.html',1,'']]],
   ['reversianz_2ejava',['ReversiAnz.java',['../_reversi_anz_8java.html',1,'']]],
+  ['reversianztest_2ejava',['ReversiAnzTest.java',['../_reversi_anz_test_8java.html',1,'']]],
   ['reversiconst_2ejava',['ReversiConst.java',['../_reversi_const_8java.html',1,'']]],
   ['reversihistory_2ejava',['ReversiHistory.java',['../_reversi_history_8java.html',1,'']]],
   ['reversihistorytest_2ejava',['ReversiHistoryTest.java',['../_reversi_history_test_8java.html',1,'']]],

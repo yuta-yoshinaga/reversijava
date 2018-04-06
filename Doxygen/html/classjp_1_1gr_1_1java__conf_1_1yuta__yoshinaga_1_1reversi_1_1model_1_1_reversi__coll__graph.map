@@ -1,5 +1,5 @@
 <map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi">
-<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_history.html" title="リバーシ履歴クラス " alt="" coords="165,351,380,531"/>
-<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html" title="リバーシポイントクラス " alt="" coords="5,5,220,185"/>
-<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_anz.html" title="リバーシ解析クラス " alt="" coords="405,248,642,633"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_history.html" title="リバーシ履歴クラス " alt="" coords="46,745,261,925"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html" title="リバーシポイントクラス " alt="" coords="191,132,406,312"/>
+<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_anz.html" title="リバーシ解析クラス " alt="" coords="331,336,568,721"/>
 </map>

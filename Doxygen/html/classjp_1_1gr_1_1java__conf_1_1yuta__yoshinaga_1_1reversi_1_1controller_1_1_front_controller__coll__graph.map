@@ -1,5 +1,5 @@
 <map id="jp.gr.java_conf.yuta_yoshinaga.reversi.controller.FrontController" name="jp.gr.java_conf.yuta_yoshinaga.reversi.controller.FrontController">
-<area shape="rect" id="node3" href="$interfacejp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play_interface.html" title="リバーシプレイインターフェース " alt="" coords="69,5,283,171"/>
+<area shape="rect" id="node3" href="$interfacejp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play_interface.html" title="リバーシプレイインターフェース " alt="" coords="47,5,262,171"/>
 <area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play_delegate.html" title="リバーシプレイデリゲート " alt="" coords="166,233,381,413"/>
-<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_callbacks_json.html" title="コールバックJSONクラス " alt="" coords="405,263,661,384"/>
+<area shape="rect" id="node6" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_callbacks_json.html" title="コールバックJSONクラス " alt="" coords="405,263,661,384"/>
 </map>
