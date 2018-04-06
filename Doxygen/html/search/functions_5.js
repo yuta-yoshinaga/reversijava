@@ -1,12 +1,16 @@
 var searchData=
 [
   ['gameendanimexec',['gameEndAnimExec',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play.html#aaf0f07bdc219b6d8ec5551457fb551ab',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::ReversiPlay']]],
+  ['getauth',['getAuth',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_res_json.html#ae9ce58a56ca0b5302efb00692e1e78d4',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::ResJson']]],
   ['getbetcnt',['getBetCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a9f826e110ec3298a6bc5d6987a94519c',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getcallbacks',['getCallbacks',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_res_json.html#a1bd6cdcfb3ea59616409b5aae1d408e2',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::ResJson']]],
   ['getcolorena',['getColorEna',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#ac6fafa41eeff56abfc67b2b5876b50f9',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getedgesideone',['getEdgeSideOne',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#aa3c701584a82e4656cb1c60123454953',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getedgesidethree',['getEdgeSideThree',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a296b35d2241e6b3cff31bcb199c3d9aa',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getedgesidetwo',['getEdgeSideTwo',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afc0b642f56e39a28ab5adc48c8fd2b98',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getedgesidezero',['getEdgeSideZero',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a3989b051544745724fc372d4a6b8a7f7',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getfunc',['getFunc',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_funcs_json.html#adb9267487ecb01372d9332bee84f6378',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::FuncsJson']]],
+  ['getfuncs',['getFuncs',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_callbacks_json.html#af9a62a3dbe6416793c01d7a0f69da2b1',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::CallbacksJson']]],
   ['getgameendsts',['getGameEndSts',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#abc97a3ba932ee271cf04ff0f72162100',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['gethistory',['getHistory',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#af781f5ebb4fb33b574ec58acfb45a796',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['gethistorycnt',['getHistoryCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a286949e070d0cfc8a1d9562a298b7b98',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
@@ -14,6 +18,11 @@ var searchData=
   ['getmasustscnt',['getMasuStsCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a1a528710342faba65975f4768d24b129',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getmasustsena',['getMasuStsEna',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a055f20327e781b1f6807dba0baa1e51b',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getmasustsold',['getMasuStsOld',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a051aca9eb7ac3ce375a6c017fd0eb400',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['getparam1',['getParam1',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_funcs_json.html#a17ed3cd16403a8b83b61fa069556c68e',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::FuncsJson']]],
+  ['getparam2',['getParam2',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_funcs_json.html#a032d83a0530a2f08fdaeba14eb5c1dcd',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::FuncsJson']]],
+  ['getparam3',['getParam3',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_funcs_json.html#a783b331566c019ac50dd8937946d70f7',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::FuncsJson']]],
+  ['getparam4',['getParam4',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_funcs_json.html#ae5c17deee7b34a5e3ed92555531bf34f',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::FuncsJson']]],
+  ['getparam5',['getParam5',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_funcs_json.html#a86e96a579cc5f23f2842565cab755cbf',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::FuncsJson']]],
   ['getpoint',['getPoint',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#ab180757b310c3a72cf159043ba0dc09e',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getpointanz',['getPointAnz',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a6da3f67c0468cf59ba6ceb796133c921',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
   ['getpointcnt',['getPointCnt',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a8ab289d67a725a30e92411c90b755bd8',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]]
