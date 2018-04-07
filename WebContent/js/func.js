@@ -27,7 +27,7 @@ $(document).ready(function() {
     function setSetting(reversiSetting) {
 		var requestObj = $.stringify(reversiSetting);
         $.ajax({
-            url: "/reversijava/FrontController",
+            url: "./FrontController",
             type: 'POST',
             data: {
                 func: "setSetting",
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     function reset() {
         $.ajax({
-            url: "/reversijava/FrontController",
+            url: "./FrontController",
             type: 'POST',
             data: {
                 func: "reset",
@@ -78,7 +78,7 @@ $(document).ready(function() {
 
     function reversiPlay(y, x) {
         $.ajax({
-            url: "/reversijava/FrontController",
+            url: "./FrontController",
             type: 'POST',
             data: {
                 func: "reversiPlay",

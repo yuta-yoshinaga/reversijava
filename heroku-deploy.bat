@@ -1,0 +1,1 @@
+heroku deploy:war --war target/reversijava-1.0.0-SNAPSHOT.war --app reversijava
