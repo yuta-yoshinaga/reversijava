@@ -42,9 +42,9 @@ import net.arnx.jsonic.JSON;
 ////////////////////////////////////////////////////////////////////////////////
 @WebServlet("/FrontController")
 public class FrontController extends HttpServlet implements ReversiPlayInterface{
-	private static final long serialVersionUID = 1L;
-	private CallbacksJson callbacks = null;
-	private ReversiPlayDelegate rvDele = null;
+	private static final long serialVersionUID = 1L;			//!< シリアルバージョン
+	private CallbacksJson callbacks = null;						//!< コールバックス
+	private ReversiPlayDelegate rvDele = null;					//!< リバーシデリゲート
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			コンストラクタ

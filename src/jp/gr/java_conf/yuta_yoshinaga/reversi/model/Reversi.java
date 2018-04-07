@@ -1603,7 +1603,7 @@ public class Reversi implements Serializable
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			パス判定
-	///	@fn				public int getBetCnt(int color,int y,int x)
+	///	@fn				public int getPassEna(int color,int y,int x)
 	///	@param[in]		int color		コマ色
 	///	@param[in]		int y			マスのY座標
 	///	@param[in]		int x			マスのX座標

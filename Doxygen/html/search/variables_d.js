@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html#af41c34bc1ea9531eb815cfc74bccd0c1',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::ReversiPoint']]]
+  ['serialversionuid',['serialVersionUID',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1controller_1_1_front_controller.html#a42e40239dd4f246bd1524cdb08ca41af',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::controller::FrontController']]]
 ];

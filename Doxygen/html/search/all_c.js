@@ -39,5 +39,6 @@ var searchData=
   ['reversisetting_2ejava',['ReversiSetting.java',['../_reversi_setting_8java.html',1,'']]],
   ['reversisettingtest_2ejava',['ReversiSettingTest.java',['../_reversi_setting_test_8java.html',1,'']]],
   ['reversitest_2ejava',['ReversiTest.java',['../_reversi_test_8java.html',1,'']]],
-  ['revmasusts',['revMasuSts',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a3c63579c27513dffc555416388f8530a',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]]
+  ['revmasusts',['revMasuSts',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a3c63579c27513dffc555416388f8530a',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::model::Reversi']]],
+  ['rvdele',['rvDele',['../classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1controller_1_1_front_controller.html#a582bcd1cbb69aaf686182d85dbd21f2d',1,'jp::gr::java_conf::yuta_yoshinaga::reversi::controller::FrontController']]]
 ];
