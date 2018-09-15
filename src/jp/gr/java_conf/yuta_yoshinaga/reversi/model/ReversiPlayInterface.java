@@ -26,61 +26,61 @@ public interface ReversiPlayInterface
 {
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			メッセージダイアログ
-	///	@fn				void ViewMsgDlg(String title , String msg)
+	///	@fn				FuncsJson ViewMsgDlg(String title , String msg)
 	///	@param[in]		String title	タイトル
 	///	@param[in]		String msg		メッセージ
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	void ViewMsgDlg(String title , String msg);
+	FuncsJson ViewMsgDlg(String title , String msg);
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			1マス描画
-	///	@fn				void DrawSingle(int y, int x, int sts, int bk, String text)
+	///	@fn				FuncsJson DrawSingle(int y, int x, int sts, int bk, String text)
 	///	@param[in]		int y		Y座標
 	///	@param[in]		int x		X座標
 	///	@param[in]		int sts		ステータス
 	///	@param[in]		int bk		背景
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	void DrawSingle(int y, int x, int sts, int bk, String text);
+	FuncsJson DrawSingle(int y, int x, int sts, int bk, String text);
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			現在の色メッセージ
-	///	@fn				void CurColMsg(String text)
+	///	@fn				FuncsJson CurColMsg(String text)
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	void CurColMsg(String text);
+	FuncsJson CurColMsg(String text);
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			現在のステータスメッセージ
-	///	@fn				void CurStsMsg(String text)
+	///	@fn				FuncsJson CurStsMsg(String text)
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	void CurStsMsg(String text);
+	FuncsJson CurStsMsg(String text);
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			ウェイト
-	///	@fn				void Wait(int time)
+	///	@fn				FuncsJson Wait(int time)
 	///	@param[in]		int time	ウェイト時間(msec)
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	void Wait(int time);
+	FuncsJson Wait(int time);
 }

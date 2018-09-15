@@ -44,76 +44,76 @@ public class ReversiPlayDelegate implements Serializable
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			メッセージダイアログ
-	///	@fn				void ViewMsgDlg(String title , String msg)
+	///	@fn				FuncsJson ViewMsgDlg(String title , String msg)
 	///	@param[in]		String title	タイトル
 	///	@param[in]		String msg		メッセージ
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void ViewMsgDlg(String title , String msg)
+	public FuncsJson ViewMsgDlg(String title , String msg)
 	{
-		impl.ViewMsgDlg(title , msg);
+		return impl.ViewMsgDlg(title , msg);
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			1マス描画
-	///	@fn				void DrawSingle(int y, int x, int sts, int bk, String text)
+	///	@fn				FuncsJson DrawSingle(int y, int x, int sts, int bk, String text)
 	///	@param[in]		int y		Y座標
 	///	@param[in]		int x		X座標
 	///	@param[in]		int sts		ステータス
 	///	@param[in]		int bk		背景
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void DrawSingle(int y, int x, int sts, int bk, String text)
+	public FuncsJson DrawSingle(int y, int x, int sts, int bk, String text)
 	{
-		impl.DrawSingle(y, x, sts, bk, text);
+		return impl.DrawSingle(y, x, sts, bk, text);
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			現在の色メッセージ
-	///	@fn				void CurColMsg(String text)
+	///	@fn				FuncsJson CurColMsg(String text)
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void CurColMsg(String text)
+	public FuncsJson CurColMsg(String text)
 	{
-		impl.CurColMsg(text);
+		return impl.CurColMsg(text);
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			現在のステータスメッセージ
-	///	@fn				void CurStsMsg(String text)
+	///	@fn				FuncsJson CurStsMsg(String text)
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void CurStsMsg(String text)
+	public FuncsJson CurStsMsg(String text)
 	{
-		impl.CurStsMsg(text);
+		return impl.CurStsMsg(text);
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			ウェイト
-	///	@fn				void Wait(int time)
+	///	@fn				FuncsJson Wait(int time)
 	///	@param[in]		int time	ウェイト時間(msec)
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void Wait(int time)
+	public FuncsJson Wait(int time)
 	{
-		impl.Wait(time);
+		return impl.Wait(time);
 	}
 }

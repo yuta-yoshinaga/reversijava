@@ -38,6 +38,7 @@ public class ReversiPlay implements Serializable
 	private int mPlayLock;									//!< プレイロック
 	private Random r;										//!< 乱数
 	private ReversiPlayDelegate mDelegate;					//!< デリゲート
+	private CallbacksJson mCallbacks;						//!< コールバック
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			ゲッター
@@ -315,6 +316,31 @@ public class ReversiPlay implements Serializable
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			ゲッター
+	///	@fn				CallbacksJson getmCallbacks()
+	///	@return			CallbacksJson mCallbacks
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
+	public CallbacksJson getmCallbacks() {
+		return mCallbacks;
+	}
+
+	////////////////////////////////////////////////////////////////////////////////
+	///	@brief			セッター
+	///	@fn				void setmCallbacks(CallbacksJson mCallbacks)
+	///	@param[in]		CallbacksJson mCallbacks
+	///	@return			ありません
+	///	@author			Yuta Yoshinaga
+	///	@date			2018.04.01
+	///
+	////////////////////////////////////////////////////////////////////////////////
+	public void setmCallbacks(CallbacksJson mCallbacks) {
+		this.mCallbacks = mCallbacks;
+	}
+
+	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			コンストラクタ
 	///	@fn				ReversiPlay()
 	///	@return			ありません
@@ -339,6 +365,7 @@ public class ReversiPlay implements Serializable
 		this.mPlayLock	= 0;
 		this.r			= new Random();
 		this.mDelegate	= null;
+		this.mCallbacks	= null;
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -1116,7 +1143,7 @@ public class ReversiPlay implements Serializable
 	////////////////////////////////////////////////////////////////////////////////
 	private void ViewMsgDlgLocal(String title , String msg)
 	{
-		if(this.mDelegate != null) this.mDelegate.ViewMsgDlg(title, msg);
+		if(this.mDelegate != null) this.mCallbacks.getFuncs().add(this.mDelegate.ViewMsgDlg(title, msg));
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -1134,7 +1161,7 @@ public class ReversiPlay implements Serializable
 	////////////////////////////////////////////////////////////////////////////////
 	private void DrawSingleLocal(int y, int x, int sts, int bk, String text)
 	{
-		if(this.mDelegate != null) this.mDelegate.DrawSingle(y, x, sts, bk, text);
+		if(this.mDelegate != null) this.mCallbacks.getFuncs().add(this.mDelegate.DrawSingle(y, x, sts, bk, text));
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -1148,7 +1175,7 @@ public class ReversiPlay implements Serializable
 	////////////////////////////////////////////////////////////////////////////////
 	private void CurColMsgLocal(String text)
 	{
-		if(this.mDelegate != null) this.mDelegate.CurColMsg(text);
+		if(this.mDelegate != null) this.mCallbacks.getFuncs().add(this.mDelegate.CurColMsg(text));
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -1162,7 +1189,7 @@ public class ReversiPlay implements Serializable
 	////////////////////////////////////////////////////////////////////////////////
 	private void CurStsMsgLocal(String text)
 	{
-		if(this.mDelegate != null) this.mDelegate.CurStsMsg(text);
+		if(this.mDelegate != null) this.mCallbacks.getFuncs().add(this.mDelegate.CurStsMsg(text));
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -1176,6 +1203,6 @@ public class ReversiPlay implements Serializable
 	////////////////////////////////////////////////////////////////////////////////
 	private void WaitLocal(int time)
 	{
-		if(this.mDelegate != null) this.mDelegate.Wait(time);
+		if(this.mDelegate != null) this.mCallbacks.getFuncs().add(this.mDelegate.Wait(time));
 	}
 }

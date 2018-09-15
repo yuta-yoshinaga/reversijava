@@ -43,8 +43,6 @@ import net.arnx.jsonic.JSON;
 @WebServlet("/FrontController")
 public class FrontController extends HttpServlet implements ReversiPlayInterface{
 	private static final long serialVersionUID = 1L;			//!< シリアルバージョン
-	private CallbacksJson callbacks = null;						//!< コールバックス
-	private ReversiPlayDelegate rvDele = null;					//!< リバーシデリゲート
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			コンストラクタ
@@ -57,8 +55,6 @@ public class FrontController extends HttpServlet implements ReversiPlayInterface
 	////////////////////////////////////////////////////////////////////////////////
 	public FrontController() {
 		super();
-		// TODO Auto-generated constructor stub
-		rvDele = new ReversiPlayDelegate((ReversiPlayInterface)this);
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
@@ -74,25 +70,24 @@ public class FrontController extends HttpServlet implements ReversiPlayInterface
 	////////////////////////////////////////////////////////////////////////////////
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		ResJson resJson = new ResJson();
-		this.callbacks = new CallbacksJson();
 
 		HttpSession session = request.getSession(true);
 		ReversiPlay rvPlay = null;
 		if (session.isNew()) {
 			// *** 初めてのアクセス *** //
 			rvPlay = new ReversiPlay();
-			rvPlay.setmDelegate(rvDele);
+			rvPlay.setmDelegate(new ReversiPlayDelegate((ReversiPlayInterface)this));
 			session.setAttribute("rvPlay", rvPlay);
 		} else {
 			rvPlay = (ReversiPlay) session.getAttribute("rvPlay");
 		}
 		if(rvPlay == null) {
 			rvPlay = new ReversiPlay();
-			rvPlay.setmDelegate(rvDele);
+			rvPlay.setmDelegate(new ReversiPlayDelegate((ReversiPlayInterface)this));
 			session.setAttribute("rvPlay", rvPlay);
 		}
+		rvPlay.setmCallbacks(new CallbacksJson());
 
 		String func = request.getParameter("func");
 		System.out.println(func);
@@ -120,7 +115,7 @@ public class FrontController extends HttpServlet implements ReversiPlayInterface
 		response.setContentType("application/json");
 		response.setCharacterEncoding("utf-8");
 
-		resJson.setCallbacks(this.callbacks);
+		resJson.setCallbacks(rvPlay.getmCallbacks());
 		String json = JSON.encode(resJson);
 		System.out.println(json);
 		response.getWriter().append(json);
@@ -128,38 +123,38 @@ public class FrontController extends HttpServlet implements ReversiPlayInterface
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			メッセージダイアログ
-	///	@fn				void ViewMsgDlg(String title , String msg)
+	///	@fn				FuncsJson ViewMsgDlg(String title , String msg)
 	///	@param[in]		String title	タイトル
 	///	@param[in]		String msg		メッセージ
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void ViewMsgDlg(String title , String msg)
+	public FuncsJson ViewMsgDlg(String title , String msg)
 	{
 		FuncsJson funcs = new FuncsJson();
 		funcs.setFunc("ViewMsgDlg");
 		funcs.setParam1(title);
 		funcs.setParam2(msg);
-		this.callbacks.getFuncs().add(funcs);
 		System.out.println("ViewMsgDlg title = " + title + " msg = " + msg);
+		return funcs;
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			1マス描画
-	///	@fn				void DrawSingle(int y, int x, int sts, int bk, String text)
+	///	@fn				CallbacksJson DrawSingle(int y, int x, int sts, int bk, String text)
 	///	@param[in]		int y		Y座標
 	///	@param[in]		int x		X座標
 	///	@param[in]		int sts		ステータス
 	///	@param[in]		int bk		背景
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void DrawSingle(int y, int x, int sts, int bk, String text)
+	public FuncsJson DrawSingle(int y, int x, int sts, int bk, String text)
 	{
 		FuncsJson funcs = new FuncsJson();
 		funcs.setFunc("DrawSingle");
@@ -168,62 +163,62 @@ public class FrontController extends HttpServlet implements ReversiPlayInterface
 		funcs.setParam3(String.valueOf(sts));
 		funcs.setParam4(String.valueOf(bk));
 		funcs.setParam5(text);
-		this.callbacks.getFuncs().add(funcs);
 		System.out.println("DrawSingle y = " + y + " x = " + x + " sts = " + sts + " bk = " + bk + " text = " + text);
+		return funcs;
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			現在の色メッセージ
-	///	@fn				void CurColMsg(String text)
+	///	@fn				FuncsJson CurColMsg(String text)
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void CurColMsg(String text)
+	public FuncsJson CurColMsg(String text)
 	{
 		FuncsJson funcs = new FuncsJson();
 		funcs.setFunc("CurColMsg");
 		funcs.setParam1(text);
-		this.callbacks.getFuncs().add(funcs);
 		System.out.println("CurColMsg text = " + text);
+		return funcs;
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			現在のステータスメッセージ
-	///	@fn				void CurStsMsg(String text)
+	///	@fn				FuncsJson CurStsMsg(String text)
 	///	@param[in]		String text	テキスト
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void CurStsMsg(String text)
+	public FuncsJson CurStsMsg(String text)
 	{
 		FuncsJson funcs = new FuncsJson();
 		funcs.setFunc("CurStsMsg");
 		funcs.setParam1(text);
-		this.callbacks.getFuncs().add(funcs);
 		System.out.println("CurStsMsg text = " + text);
+		return funcs;
 	}
 
 	////////////////////////////////////////////////////////////////////////////////
 	///	@brief			ウェイト
-	///	@fn				void Wait(int time)
+	///	@fn				FuncsJson Wait(int time)
 	///	@param[in]		int time	ウェイト時間(msec)
-	///	@return			ありません
+	///	@return			FuncsJson
 	///	@author			Yuta Yoshinaga
 	///	@date			2018.04.01
 	///
 	////////////////////////////////////////////////////////////////////////////////
-	public void Wait(int time)
+	public FuncsJson Wait(int time)
 	{
 		FuncsJson funcs = new FuncsJson();
 		funcs.setFunc("Wait");
 		funcs.setParam1(String.valueOf(time));
-		this.callbacks.getFuncs().add(funcs);
 		System.out.println("Wait time = " + time);
+		return funcs;
 	}
 
 }
