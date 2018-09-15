@@ -1,0 +1,5 @@
+<map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.getGameEndSts" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.getGameEndSts">
+<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#ac6fafa41eeff56abfc67b2b5876b50f9" title="指定色が現在置ける場所があるかチェック " alt="" coords="289,5,525,61"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a055f20327e781b1f6807dba0baa1e51b" title="指定座標に指定色を置けるかチェック " alt="" coords="573,5,809,61"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afbad8b2c3b2423a7490f9a3b636584d3" title="パラメーター範囲チェック " alt="" coords="857,13,1137,54"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPlay" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.ReversiPlay">
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play_delegate.html" title="リバーシプレイデリゲート " alt="" coords="1003,233,1218,413"/>
+<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_callbacks_json.html" title="コールバックJSONクラス " alt="" coords="722,263,978,384"/>
+<area shape="rect" id="node8" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html" title="リバーシクラス " alt="" coords="304,1475,519,1992"/>
+<area shape="rect" id="node9" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_history.html" title="リバーシ履歴クラス " alt="" coords="36,847,251,1027"/>
+<area shape="rect" id="node10" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html" title="リバーシポイントクラス " alt="" coords="139,233,354,413"/>
+<area shape="rect" id="node11" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_anz.html" title="リバーシ解析クラス " alt="" coords="325,437,562,823"/>
+<area shape="rect" id="node12" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_setting.html" title="アプリ設定クラス " alt="" coords="527,1051,742,1451"/>
+<area shape="rect" id="node4" href="$interfacejp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_play_interface.html" title="リバーシプレイインターフェース " alt="" coords="1003,5,1218,171"/>
+</map>

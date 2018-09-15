@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['resjson_2ejava',['ResJson.java',['../_res_json_8java.html',1,'']]],
+  ['resjsontest_2ejava',['ResJsonTest.java',['../_res_json_test_8java.html',1,'']]],
+  ['reversi_2ejava',['Reversi.java',['../_reversi_8java.html',1,'']]],
+  ['reversianz_2ejava',['ReversiAnz.java',['../_reversi_anz_8java.html',1,'']]],
+  ['reversianztest_2ejava',['ReversiAnzTest.java',['../_reversi_anz_test_8java.html',1,'']]],
+  ['reversiconst_2ejava',['ReversiConst.java',['../_reversi_const_8java.html',1,'']]],
+  ['reversihistory_2ejava',['ReversiHistory.java',['../_reversi_history_8java.html',1,'']]],
+  ['reversihistorytest_2ejava',['ReversiHistoryTest.java',['../_reversi_history_test_8java.html',1,'']]],
+  ['reversiplay_2ejava',['ReversiPlay.java',['../_reversi_play_8java.html',1,'']]],
+  ['reversiplaydelegate_2ejava',['ReversiPlayDelegate.java',['../_reversi_play_delegate_8java.html',1,'']]],
+  ['reversiplayinterface_2ejava',['ReversiPlayInterface.java',['../_reversi_play_interface_8java.html',1,'']]],
+  ['reversiplaytest_2ejava',['ReversiPlayTest.java',['../_reversi_play_test_8java.html',1,'']]],
+  ['reversipoint_2ejava',['ReversiPoint.java',['../_reversi_point_8java.html',1,'']]],
+  ['reversipointtest_2ejava',['ReversiPointTest.java',['../_reversi_point_test_8java.html',1,'']]],
+  ['reversisetting_2ejava',['ReversiSetting.java',['../_reversi_setting_8java.html',1,'']]],
+  ['reversisettingtest_2ejava',['ReversiSettingTest.java',['../_reversi_setting_test_8java.html',1,'']]],
+  ['reversitest_2ejava',['ReversiTest.java',['../_reversi_test_8java.html',1,'']]]
+];

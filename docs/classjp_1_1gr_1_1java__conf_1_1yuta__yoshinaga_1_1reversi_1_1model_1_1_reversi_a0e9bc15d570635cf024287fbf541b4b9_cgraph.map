@@ -1,0 +1,8 @@
+<map id="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.setMasuCnt" name="jp.gr.java_conf.yuta_yoshinaga.reversi.model.Reversi.setMasuCnt">
+<area shape="rect" id="node2" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#afbad8b2c3b2423a7490f9a3b636584d3" title="パラメーター範囲チェック " alt="" coords="289,5,569,47"/>
+<area shape="rect" id="node3" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a497552844cbae36207f2d8c836a26b8e" title="リセット " alt="" coords="306,71,553,112"/>
+<area shape="rect" id="node4" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_anz.html#ab87a68776fedd66e0fa8bed2c24d461b" title="リセット " alt="" coords="635,23,850,79"/>
+<area shape="rect" id="node5" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi.html#a9929ed36140ddc25923ede99f86564c3" title="各コマの置ける場所等のステータス作成 " alt="" coords="617,103,868,159"/>
+<area shape="rect" id="node6" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html#a24da8d887cae320a2ca8b4c80665227c" title="セッター " alt="" coords="916,63,1131,119"/>
+<area shape="rect" id="node7" href="$classjp_1_1gr_1_1java__conf_1_1yuta__yoshinaga_1_1reversi_1_1model_1_1_reversi_point.html#a7ba3fb3aedb0d02d79ec62f4645bb8cf" title="セッター " alt="" coords="916,143,1131,199"/>
+</map>
