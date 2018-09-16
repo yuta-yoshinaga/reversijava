@@ -16,6 +16,7 @@ cd reversijava
 ### Deploy
 ![herokubutton](https://www.herokucdn.com/deploy/button.svg)  
 [Heroku](https://reversijava.herokuapp.com/)
+[API Document](https://yuta-yoshinaga.github.io/reversijava/)
 
 ## Future Releases
 TensorFlowを使って、AIの更新がしたい。
